@@ -1,0 +1,711 @@
+@import 'fonts';
+@import 'burger';
+
+$black: #272a27;
+$white: #eaeaea;
+$green: #697769;
+$lightGreen: #3b3e3b;
+$red: #e4d1cb;
+$arial: 'Arial';
+$arialBold: 'Arial Bold';
+$hkReg: 'HKGrotesk-Regular';
+$hkBold: 'HKGrotesk-SemiBold';
+$libreReg: 'LibreBaskerville-Regular';
+$libreBold: 'LibreBaskerville-Bold';
+
+.hide{
+	display: none;
+}
+
+img{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+p,h1,h2,h3,h4,h5,h6{
+	color: $black;
+}
+
+// STYLES
+
+p{
+	font-family: $arial;
+	font-size: 1rem;
+	line-height: 26px;
+	letter-spacing: 0.025em;
+}
+
+h2{
+	font-family: $arialBold;
+	text-transform: uppercase;
+	line-height: 25px;
+	font-size: 1rem;
+	letter-spacing: 0.2em;
+}
+
+h3{
+	font-family: $libreReg;
+	line-height: 40px;
+	letter-spacing: 0.05em;
+	font-size: 1.875rem;
+	text-transform: lowercase;
+}
+
+body{
+	height: 2000px;
+}
+
+.green{
+	color: $green;
+}
+
+.red{
+	color: $red;
+}
+.white{
+	color: $white;
+}
+.black{
+	color: $black;
+}
+
+.buttonWhite{
+	text-align: center;
+	border-radius: 25px;
+	background: none;
+	width: 120px;
+	margin: 0 auto;
+	border: 2px solid $white;
+	padding: 8px 10px;
+	text-transform: uppercase;
+	cursor: pointer;
+
+	a{
+		text-decoration: none;
+		color: $white;
+		font-family: $hkBold;
+		line-height: 0px;
+		font-size: .875rem;
+		letter-spacing: 0.2em;
+	}
+}
+.buttonGreen{
+	width: 170px;
+	text-align: center;
+	border-radius: 25px;
+	background: $green;
+	padding: 8px 0;
+	text-transform: uppercase;
+	cursor: pointer;
+
+	a{
+		text-decoration: none;
+		color: $white;
+		font-family: $hkBold;
+		line-height: 0px;
+		font-size: .875rem;
+		letter-spacing: 0.2em;
+	}
+}
+
+.buttonRed{
+	width: 170px;
+	text-align: center;
+	border-radius: 25px;
+	background: $red;
+	padding: 8px 0;
+	text-transform: uppercase;
+	cursor: pointer;
+	
+	a{
+		text-decoration: none;
+		color: $black;
+		font-family: $hkBold;
+		line-height: 0px;
+		font-size: .875rem;
+		letter-spacing: 0.2em;
+	}
+}
+
+// HEADER
+#mainHeader{
+	background: none;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+}
+
+// FOOTER
+#mainFooter{
+	padding: 60px 0;
+	background: $black;
+	margin-bottom: 0px;
+
+	h2,h3,p,a{
+		color: $white;
+	}
+
+	h2{
+		padding-bottom: 15px;
+		border-bottom: 2px solid $lightGreen;
+		margin-bottom: 25px;
+	}
+}
+
+#footerSm{
+	margin-bottom: 20px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	a{
+		font-size: 1.75rem;
+	}
+}
+
+.footerInfoCon{
+	margin-top: 60px;
+}
+
+.footerInfoCon:first-child{
+	margin-top: 0px;
+}
+
+#footerNav{
+	ul li{
+		margin-bottom: 16px;
+		a{
+			font-family: $arial;
+			text-decoration: none;
+		}
+	} 
+}
+
+#copyright{
+	margin-top: 50px;
+	text-align: center;
+
+}
+
+#subscribeButtonCon{
+	overflow: hidden;
+	margin-top: 20px;
+	display: block;
+	width: 225px;
+}
+
+#subscribeInput{
+	border-radius:  25px 0 0 25px;
+	border: none;
+	height: 30px;
+	padding: 0px 10px;
+	margin: 0px;
+	width: 175px;
+	display: block;
+	float: left;
+}
+#subscribeInput:focus,#subscribeInput:active{
+	outline: none;
+}
+
+#subscribeButt{
+	margin: 0px;
+	padding: 0;
+	display: block;
+	float: left;
+
+	button{
+		height: 30px;
+		width: 50px;
+		color: $white;
+		text-align: center;
+		background: $green;
+		border-radius: 0 25px 25px 0;
+		border: none;
+		font-family: $arialBold;
+		font-size: 14px;
+		letter-spacing: 0.025em;
+	}
+	button:active,button:focus{
+		outline: none;
+		opacity: 0.5;
+	}
+}
+
+//Landing
+#mainLanding{
+	background: $green;
+	height: 100vh;
+
+	.row{
+		height: 100%;
+	}
+}
+
+#landingLogo{
+	max-width: 240px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+#landingButton{
+	margin-top: 40px;
+}
+
+#landingDotCon{
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 50px;
+}
+
+.landingDot{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background: none;
+	margin: 0 5px;
+	border: 2px solid $white;
+	border-radius: 50px;
+}
+
+
+//WHAT IS TURA CONTAINER
+#whatCon{
+	margin-top: 60px;
+
+	h2,h3{
+		margin-bottom: 40px;
+	}
+
+	.buttonRed{
+		margin-top: 40px;
+	}
+}
+#personalImg{
+	margin: 40px 0 60px 0;
+}
+#personalDotCon{
+	margin-top: 10px;
+}
+
+.personalDot{
+	width: 15px;
+	height: 15px;
+	border-radius: 25px;
+	border: 2px solid $red;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+//Indoor Outdoor
+#indoorCon{
+	margin-top: 50px;
+	height: 450px;
+	background: url('../img/greenPlantBG.jpg');
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+
+	h2{
+		margin-bottom: 40px;
+	}
+
+	.container{
+		height: 100%;
+		.row{
+			height: 100%;
+		}
+	}
+}
+
+//Features
+#worksCon{
+	margin-top: 60px;
+}
+#featureInfoHead{
+
+	h2{
+		margin-bottom: 40px;
+	}
+	h3{
+		margin-bottom: 75px;
+	}
+}
+
+.featureInfoCon{
+	margin-bottom: 55px;
+	h2{
+		margin-bottom: 15px;
+	}
+}
+
+#pottedPlantCon{
+	img{
+		width: 100%;
+		height: 100%;
+	}
+}
+
+
+//App Info
+#appCon{
+	background-color: $black;
+	padding-top: 80px;
+
+	h2,h3,p{
+		color: $white;
+	}
+}
+
+#appInfo{
+	h2{
+		margin-bottom: 40px;
+	}
+	h3{
+		margin-bottom: 40px;
+	}
+	p{
+		margin-bottom: 40px;
+	}
+}
+
+#appInfo2{
+	h2{
+		margin-bottom: 40px;
+	}
+}
+
+#appPhones{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+#appTablets{
+	margin-top: 50px;
+	img{
+		height: 100%;
+		width: 100%;
+	}
+}
+
+
+//Video Section
+#turaVideoCon{
+	height: 500px;
+	background: $red;
+
+	.container,.row{
+		height: 100%;
+	}
+	
+
+}
+
+//Order Tura
+#orderCon{
+	margin: 60px 0;
+
+	h2,h3,p{
+		margin-bottom: 40px;
+	}
+}
+
+@media screen and (min-width: 768px){
+
+	//HEADER 
+	#mainHeader{
+		background-color: rgba(105,119,105,0.9);
+		height: 70px;
+		width: 100%;
+	}
+
+	#headerNav{
+		width: 100%;
+		.buttonWhite{
+			margin-left: auto;
+			margin-right: 0;
+		}
+	}
+
+	#turaIconCon{
+		width: 34px;
+		position: absolute;
+		margin: 0px auto;
+		left: 0;
+		right: 0;
+	}
+	#headerNav{
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 70px;
+		margin-right: 20px;
+
+		ul{
+			margin-top: 13px;
+
+			li a{
+				text-decoration: none;
+				color: $white;
+				font-family: $hkBold;
+				line-height: 0px;
+				font-size: .875rem;
+				letter-spacing: 0.2em;
+			}
+		}
+	}
+
+	.hamburger{
+		background: none;
+		right: auto;
+		left: 0;
+		margin: 10px 0 0 20px;
+	}
+
+
+	//TYPE
+	h3{
+		font-size: 2.5rem;
+	}
+	p{
+		line-height: 35px;
+	}
+
+	//FOOTER
+	.footerInfoCon{
+		margin-top: 0px;
+		padding: 0 40px;
+	}
+
+	#subscribeInput{
+		width: 90px;
+	}
+
+	#copyright{
+		text-align: left;
+		margin-top: 20px;
+	}
+
+	#landingLogo{
+		max-width: 300px;
+	}
+
+	//WHAT CON
+	#whatCon{
+		margin-top: 100px;
+		.buttonRed{
+			margin-top: 40px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	#personalImg{
+		margin-bottom: 100px;
+	}
+
+	#whatTura{
+		text-align: center;
+	}
+
+	//INDOOR OUTDOOR
+	#indoorCon{
+		margin-top: 100px;
+
+	}
+
+	//APP
+	#worksCon{
+		margin-top: 100px;
+	}
+	#featureInfoHead{
+		text-align: center;
+		h3{
+			margin-bottom: 140px;
+		}
+	}
+	.featureInfoCon{
+		margin-bottom: 0px;
+		position: absolute;
+		z-index: 1;
+
+		p{
+			line-height: 25px;
+		}
+	}
+
+	#featureCon1{
+		margin-top: 250px;
+		right: 0;
+	}
+	#featureCon2{
+		margin-top: 380px;
+	}
+
+	#featureCon3{
+		margin-top: 620px;
+		right: 0;
+		margin-right: 5%;
+	}
+
+	#appCon{
+		padding-top: 100px;
+	}
+	#appInfo{
+		text-align: center;
+
+		.buttonRed{
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	//ORDER
+	#orderCon{
+		background: url('../img/greenPlant2-med.jpg');
+		text-align: center;
+		background-size: auto 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		padding-top: 100px;
+		padding-bottom: 120px;
+
+		#orderInfo{
+			margin-bottom: 150px;
+		}
+		.buttonGreen{
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	#updateP{
+		margin-top: -10px;
+	}
+
+
+}
+
+@media screen and (min-width: 992px){
+	//HEADER
+	#headerNav{
+		width: 100%;
+		margin-right: 0px;
+		padding: 0 40px;
+		.buttonWhite{
+			margin: 0;
+		}
+		ul{
+			width: 100%;
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: justify;
+			-webkit-justify-content: space-between;
+			-ms-flex-pack: justify;
+			-webkit-box-align: center;-ms-flex-align: center;align-items: center;
+		}
+		li{
+			width: 120px;
+			text-align: center;
+		}
+	}
+	#turaIconCon{
+		margin: 0px;
+		position: static;
+	}
+	#turaIcon{
+		width: 34px;
+		margin: 0 auto;
+		img{
+			width: 34px;
+		}
+	}
+
+	//FOOTER
+	#footerSm{
+		max-width: 170px;
+
+		a{
+			transition: 0.3s;
+		}
+
+		a:hover{
+			transition: 0.3s;
+			color: $green;
+		}
+	}
+	#footerNav {
+		ul li a{
+			transition: 0.3s;
+		}
+		ul li a:hover{
+			transition: 0.3s;
+			color: $green;
+		}
+	}
+
+	//ADD HOVER EFFECTS
+	.buttonRed{
+		transition: 0.3s;
+		border: 2px solid $red;
+
+		a{
+			transition: 0.3s;
+		}
+
+	}
+	.buttonRed:hover{
+		background: none;
+		transition: 0.3s;
+		a{
+			color: $red;
+			transition: 0.3s;
+		}
+	}
+
+	.buttonGreen{
+		transition: 0.3s;
+		border: 2px solid $green;
+		a{
+			transition: 0.3s;
+		}
+
+	}
+	.buttonGreen:hover{
+		background: none;
+		transition: 0.3s;
+		a{
+			color: $green;
+			transition: 0.3s;
+		}
+	}
+
+	.buttonWhite{
+		transition: 0.3s;
+		a{
+			transition: 0.3s;
+		}
+
+	}
+	.buttonWhite:hover{
+		background: $white;
+		transition: 0.3s;
+		a{
+			color: $green;
+			transition: 0.3s;
+		}
+	}
+
+	#featureInfoHead{
+		h3{
+			margin-bottom: 200px;
+		}
+	}
+
+}

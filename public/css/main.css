@@ -1,0 +1,762 @@
+@font-face {
+  font-family: 'LibreBaskerville-Regular';
+  src: url("../fonts/LibreBaskerville-Regular.eot");
+  src: url("../fonts/LibreBaskerville-Regular.woff2") format("woff2"), url("../fonts/LibreBaskerville-Regular.woff") format("woff"), url("../fonts/LibreBaskerville-Regular.ttf") format("truetype"), url("../fonts/LibreBaskerville-Regular.svg#LibreBaskerville-Regular") format("svg"), url("../fonts/LibreBaskerville-Regular.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LibreBaskerville-Bold';
+  src: url("../fonts/LibreBaskerville-Bold.eot");
+  src: url("../fonts/LibreBaskerville-Bold.woff2") format("woff2"), url("../fonts/LibreBaskerville-Bold.woff") format("woff"), url("../fonts/LibreBaskerville-Bold.ttf") format("truetype"), url("../fonts/LibreBaskerville-Bold.svg#LibreBaskerville-Bold") format("svg"), url("../fonts/LibreBaskerville-Bold.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Arial';
+  src: url("../fonts/Arial.eot");
+  src: url("../fonts/Arial.woff2") format("woff2"), url("../fonts/Arial.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Arial Bold';
+  src: url("../fonts/Arial Bold.eot");
+  src: url("../fonts/Arial Bold.woff2") format("woff2"), url("../fonts/Arial Bold.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HKGrotesk-Regular';
+  src: url("../fonts/HKGrotesk-Regular.eot");
+  src: url("../fonts/HKGrotesk-Regular.woff2") format("woff2"), url("../fonts/HKGrotesk-Regular.woff") format("woff"), url("../fonts/HKGrotesk-Regular.ttf") format("truetype"), url("../fonts/HKGrotesk-Regular.svg#HKGrotesk-Regular") format("svg"), url("../fonts/HKGrotesk-Regular.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HKGrotesk-SemiBold';
+  src: url("fonts/HKGrotesk-SemiBold.eot");
+  src: url("fonts/HKGrotesk-SemiBold.woff2") format("woff2"), url("fonts/HKGrotesk-SemiBold.woff") format("woff"), url("fonts/HKGrotesk-SemiBold.ttf") format("truetype"), url("fonts/HKGrotesk-SemiBold.svg#HKGrotesk-SemiBold") format("svg"), url("fonts/HKGrotesk-SemiBold.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+.hamburger {
+  display: block;
+  position: fixed;
+  overflow: hidden;
+  margin: 10px 20px 0 0;
+  right: 0;
+  padding: 0;
+  width: 50px;
+  height: 46px;
+  font-size: 0;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #697769;
+  border: none;
+}
+.hamburger span {
+  transition: background 0s 0.3s;
+  display: block;
+  position: absolute;
+  top: 22px;
+  left: 10px;
+  right: 10px;
+  height: 3px;
+  background: white;
+}
+.hamburger span:before {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #eaeaea;
+  content: "";
+  top: -10px;
+  transition-duration: 0.3s;
+  transition-delay: 0.3s, 0s, 0s;
+  transition-property: top, transform, background;
+}
+.hamburger span:after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #eaeaea;
+  content: "";
+  bottom: -10px;
+  transition-duration: 0.3s;
+  transition-delay: 0.3s, 0s, 0s;
+  transition-property: bottom, transform, background;
+}
+
+.hamburger:focus, .hamburger:active {
+  outline: none;
+}
+
+.hamburger.openButton {
+  background-color: #eaeaea;
+}
+.hamburger.openButton span {
+  background: none;
+}
+.hamburger.openButton span::before {
+  top: 0;
+  transform: rotate(45deg);
+  transition-delay: 0s, 0.3s;
+  background: #272a27;
+}
+.hamburger.openButton span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+  transition-delay: 0s, 0.3s;
+  background: #272a27;
+}
+
+.hide {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  color: #272a27;
+}
+
+p {
+  font-family: "Arial";
+  font-size: 1rem;
+  line-height: 26px;
+  letter-spacing: 0.025em;
+}
+
+h2 {
+  font-family: "Arial Bold";
+  text-transform: uppercase;
+  line-height: 25px;
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+}
+
+h3 {
+  font-family: "LibreBaskerville-Regular";
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  font-size: 1.875rem;
+  text-transform: lowercase;
+}
+
+body {
+  height: 2000px;
+}
+
+.green {
+  color: #697769;
+}
+
+.red {
+  color: #e4d1cb;
+}
+
+.white {
+  color: #eaeaea;
+}
+
+.black {
+  color: #272a27;
+}
+
+.buttonWhite {
+  text-align: center;
+  border-radius: 25px;
+  background: none;
+  width: 120px;
+  margin: 0 auto;
+  border: 2px solid #eaeaea;
+  padding: 8px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.buttonWhite a {
+  text-decoration: none;
+  color: #eaeaea;
+  font-family: "HKGrotesk-SemiBold";
+  line-height: 0px;
+  font-size: .875rem;
+  letter-spacing: 0.2em;
+}
+
+.buttonGreen {
+  width: 170px;
+  text-align: center;
+  border-radius: 25px;
+  background: #697769;
+  padding: 8px 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.buttonGreen a {
+  text-decoration: none;
+  color: #eaeaea;
+  font-family: "HKGrotesk-SemiBold";
+  line-height: 0px;
+  font-size: .875rem;
+  letter-spacing: 0.2em;
+}
+
+.buttonRed {
+  width: 170px;
+  text-align: center;
+  border-radius: 25px;
+  background: #e4d1cb;
+  padding: 8px 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.buttonRed a {
+  text-decoration: none;
+  color: #272a27;
+  font-family: "HKGrotesk-SemiBold";
+  line-height: 0px;
+  font-size: .875rem;
+  letter-spacing: 0.2em;
+}
+
+#mainHeader {
+  background: none;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+
+#mainFooter {
+  padding: 60px 0;
+  background: #272a27;
+  margin-bottom: 0px;
+}
+#mainFooter h2, #mainFooter h3, #mainFooter p, #mainFooter a {
+  color: #eaeaea;
+}
+#mainFooter h2 {
+  padding-bottom: 15px;
+  border-bottom: 2px solid #3b3e3b;
+  margin-bottom: 25px;
+}
+
+#footerSm {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+#footerSm a {
+  font-size: 1.75rem;
+}
+
+.footerInfoCon {
+  margin-top: 60px;
+}
+
+.footerInfoCon:first-child {
+  margin-top: 0px;
+}
+
+#footerNav ul li {
+  margin-bottom: 16px;
+}
+#footerNav ul li a {
+  font-family: "Arial";
+  text-decoration: none;
+}
+
+#copyright {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#subscribeButtonCon {
+  overflow: hidden;
+  margin-top: 20px;
+  display: block;
+  width: 225px;
+}
+
+#subscribeInput {
+  border-radius: 25px 0 0 25px;
+  border: none;
+  height: 30px;
+  padding: 0px 10px;
+  margin: 0px;
+  width: 175px;
+  display: block;
+  float: left;
+}
+
+#subscribeInput:focus, #subscribeInput:active {
+  outline: none;
+}
+
+#subscribeButt {
+  margin: 0px;
+  padding: 0;
+  display: block;
+  float: left;
+}
+#subscribeButt button {
+  height: 30px;
+  width: 50px;
+  color: #eaeaea;
+  text-align: center;
+  background: #697769;
+  border-radius: 0 25px 25px 0;
+  border: none;
+  font-family: "Arial Bold";
+  font-size: 14px;
+  letter-spacing: 0.025em;
+}
+#subscribeButt button:active, #subscribeButt button:focus {
+  outline: none;
+  opacity: 0.5;
+}
+
+#mainLanding {
+  background: #697769;
+  height: 100vh;
+}
+#mainLanding .row {
+  height: 100%;
+}
+
+#landingLogo {
+  max-width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#landingButton {
+  margin-top: 40px;
+}
+
+#landingDotCon {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 50px;
+}
+
+.landingDot {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: none;
+  margin: 0 5px;
+  border: 2px solid #eaeaea;
+  border-radius: 50px;
+}
+
+#whatCon {
+  margin-top: 60px;
+}
+#whatCon h2, #whatCon h3 {
+  margin-bottom: 40px;
+}
+#whatCon .buttonRed {
+  margin-top: 40px;
+}
+
+#personalImg {
+  margin: 40px 0 60px 0;
+}
+
+#personalDotCon {
+  margin-top: 10px;
+}
+
+.personalDot {
+  width: 15px;
+  height: 15px;
+  border-radius: 25px;
+  border: 2px solid #e4d1cb;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+#indoorCon {
+  margin-top: 50px;
+  height: 450px;
+  background: url("../img/greenPlantBG.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+#indoorCon h2 {
+  margin-bottom: 40px;
+}
+#indoorCon .container {
+  height: 100%;
+}
+#indoorCon .container .row {
+  height: 100%;
+}
+
+#worksCon {
+  margin-top: 60px;
+}
+
+#featureInfoHead h2 {
+  margin-bottom: 40px;
+}
+#featureInfoHead h3 {
+  margin-bottom: 75px;
+}
+
+.featureInfoCon {
+  margin-bottom: 55px;
+}
+.featureInfoCon h2 {
+  margin-bottom: 15px;
+}
+
+#pottedPlantCon img {
+  width: 100%;
+  height: 100%;
+}
+
+#appCon {
+  background-color: #272a27;
+  padding-top: 80px;
+}
+#appCon h2, #appCon h3, #appCon p {
+  color: #eaeaea;
+}
+
+#appInfo h2 {
+  margin-bottom: 40px;
+}
+#appInfo h3 {
+  margin-bottom: 40px;
+}
+#appInfo p {
+  margin-bottom: 40px;
+}
+
+#appInfo2 h2 {
+  margin-bottom: 40px;
+}
+
+#appPhones {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#appTablets {
+  margin-top: 50px;
+}
+#appTablets img {
+  height: 100%;
+  width: 100%;
+}
+
+#turaVideoCon {
+  height: 500px;
+  background: #e4d1cb;
+}
+#turaVideoCon .container, #turaVideoCon .row {
+  height: 100%;
+}
+
+#orderCon {
+  margin: 60px 0;
+}
+#orderCon h2, #orderCon h3, #orderCon p {
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  #mainHeader {
+    background-color: rgba(105, 119, 105, 0.9);
+    height: 70px;
+    width: 100%;
+  }
+
+  #headerNav {
+    width: 100%;
+  }
+  #headerNav .buttonWhite {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  #turaIconCon {
+    width: 34px;
+    position: absolute;
+    margin: 0px auto;
+    left: 0;
+    right: 0;
+  }
+
+  #headerNav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 70px;
+    margin-right: 20px;
+  }
+  #headerNav ul {
+    margin-top: 13px;
+  }
+  #headerNav ul li a {
+    text-decoration: none;
+    color: #eaeaea;
+    font-family: "HKGrotesk-SemiBold";
+    line-height: 0px;
+    font-size: .875rem;
+    letter-spacing: 0.2em;
+  }
+
+  .hamburger {
+    background: none;
+    right: auto;
+    left: 0;
+    margin: 10px 0 0 20px;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    line-height: 35px;
+  }
+
+  .footerInfoCon {
+    margin-top: 0px;
+    padding: 0 40px;
+  }
+
+  #subscribeInput {
+    width: 90px;
+  }
+
+  #copyright {
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  #landingLogo {
+    max-width: 300px;
+  }
+
+  #whatCon {
+    margin-top: 100px;
+  }
+  #whatCon .buttonRed {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #personalImg {
+    margin-bottom: 100px;
+  }
+
+  #whatTura {
+    text-align: center;
+  }
+
+  #indoorCon {
+    margin-top: 100px;
+  }
+
+  #worksCon {
+    margin-top: 100px;
+  }
+
+  #featureInfoHead {
+    text-align: center;
+  }
+  #featureInfoHead h3 {
+    margin-bottom: 140px;
+  }
+
+  .featureInfoCon {
+    margin-bottom: 0px;
+    position: absolute;
+    z-index: 1;
+  }
+  .featureInfoCon p {
+    line-height: 25px;
+  }
+
+  #featureCon1 {
+    margin-top: 250px;
+    right: 0;
+  }
+
+  #featureCon2 {
+    margin-top: 380px;
+  }
+
+  #featureCon3 {
+    margin-top: 620px;
+    right: 0;
+    margin-right: 5%;
+  }
+
+  #appCon {
+    padding-top: 100px;
+  }
+
+  #appInfo {
+    text-align: center;
+  }
+  #appInfo .buttonRed {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #orderCon {
+    background: url("../img/greenPlant2-med.jpg");
+    text-align: center;
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+  #orderCon #orderInfo {
+    margin-bottom: 150px;
+  }
+  #orderCon .buttonGreen {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #updateP {
+    margin-top: -10px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #headerNav {
+    width: 100%;
+    margin-right: 0px;
+    padding: 0 40px;
+  }
+  #headerNav .buttonWhite {
+    margin: 0;
+  }
+  #headerNav ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  #headerNav li {
+    width: 120px;
+    text-align: center;
+  }
+
+  #turaIconCon {
+    margin: 0px;
+    position: static;
+  }
+
+  #turaIcon {
+    width: 34px;
+    margin: 0 auto;
+  }
+  #turaIcon img {
+    width: 34px;
+  }
+
+  #footerSm {
+    max-width: 170px;
+  }
+  #footerSm a {
+    transition: 0.3s;
+  }
+  #footerSm a:hover {
+    transition: 0.3s;
+    color: #697769;
+  }
+
+  #footerNav ul li a {
+    transition: 0.3s;
+  }
+  #footerNav ul li a:hover {
+    transition: 0.3s;
+    color: #697769;
+  }
+
+  .buttonRed {
+    transition: 0.3s;
+    border: 2px solid #e4d1cb;
+  }
+  .buttonRed a {
+    transition: 0.3s;
+  }
+
+  .buttonRed:hover {
+    background: none;
+    transition: 0.3s;
+  }
+  .buttonRed:hover a {
+    color: #e4d1cb;
+    transition: 0.3s;
+  }
+
+  .buttonGreen {
+    transition: 0.3s;
+    border: 2px solid #697769;
+  }
+  .buttonGreen a {
+    transition: 0.3s;
+  }
+
+  .buttonGreen:hover {
+    background: none;
+    transition: 0.3s;
+  }
+  .buttonGreen:hover a {
+    color: #697769;
+    transition: 0.3s;
+  }
+
+  .buttonWhite {
+    transition: 0.3s;
+  }
+  .buttonWhite a {
+    transition: 0.3s;
+  }
+
+  .buttonWhite:hover {
+    background: #eaeaea;
+    transition: 0.3s;
+  }
+  .buttonWhite:hover a {
+    color: #697769;
+    transition: 0.3s;
+  }
+
+  #featureInfoHead h3 {
+    margin-bottom: 200px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
