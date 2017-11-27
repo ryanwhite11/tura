@@ -496,7 +496,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   #mainHeader {
-    background-color: rgba(105, 119, 105, 0.9);
+    background-color: #697769;
     height: 70px;
     width: 100%;
   }
@@ -541,6 +541,14 @@ body {
     right: auto;
     left: 0;
     margin: 10px 0 0 20px;
+  }
+
+  #subscribeButtonCon {
+    width: 160px;
+  }
+
+  #subscribeInput {
+    width: 110px;
   }
 
   h3 {
@@ -687,6 +695,9 @@ body {
     width: 120px;
     text-align: center;
   }
+  #headerNav li a:hover {
+    color: #3b3e3b;
+  }
 
   #turaIconCon {
     margin: 0px;
@@ -718,6 +729,14 @@ body {
   #footerNav ul li a:hover {
     transition: 0.3s;
     color: #697769;
+  }
+
+  #subscribeButtonCon {
+    width: 220px;
+  }
+
+  #subscribeInput {
+    width: 170px;
   }
 
   .buttonRed {
@@ -818,6 +837,30 @@ body {
 
   #appTablets {
     margin-top: -120px;
+  }
+
+  #appInfo {
+    text-align: left;
+  }
+  #appInfo .buttonRed {
+    margin-left: 0px;
+  }
+
+  #orderCon {
+    background: url("../img/greenPlant2-lrg.png");
+    text-align: center;
+    background-size: auto 100%;
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  #orderCon #orderInfo {
+    margin-bottom: 0px;
+  }
+  #orderCon .buttonGreen {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
