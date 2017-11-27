@@ -129,24 +129,24 @@
             <h2 class="hide">App Info</h2>
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-10 offset-md-1" id="appInfo">
+                    <div class="col-12 col-md-10 offset-md-1 col-xl-6" id="appInfo">
                         <h2>The App</h2>
                         <h3>connecting to your plants</h3>     
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>      
                         <div class="buttonRed"><a href="#">Download</a></div>            
                     </div>
-                    <div class="col-12 col-sm-8 offset-sm-2 col-lg-4 offset-lg-1" id="appPhones">
+                    <div class="col-12 col-sm-8 offset-sm-2 col-md-4 offset-md-1 col-xl-5 offset-xl-1" id="appPhones">
                         <img src="img/iphones.png" alt="Tura App Smartphone Image">
                         
                     </div>
-                    <div class="col-12 col-md-10 col-lg-6" id="appInfo2">
+                    <div class="col-12 col-md-10 col-lg-6 col-xl-6 offset-xl-6" id="appInfo2">
                         <h2>Monitor Your Plants From Anywhere</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>      
                     </div>
 
-                    <div class="col-12 col-sm-10 col-md-8 offset-sm-1 offset-md-2" id="appTablets">
+                    <div class="col-12 col-sm-10 col-md-8 offset-sm-1 offset-md-2 col-xl-7 offset-xl-0" id="appTablets">
                         <img src="img/ipads.png" alt="Tura App Tablet Image">
                     </div>
                 </div>

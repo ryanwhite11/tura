@@ -667,6 +667,9 @@ body {
   #headerNav .buttonWhite {
     margin: 0;
   }
+  #headerNav .buttonWhite:hover a {
+    color: #697769;
+  }
   #headerNav ul {
     width: 100%;
     display: -webkit-box;
@@ -806,6 +809,15 @@ body {
   #appInfo2 {
     margin-top: 80px;
     padding-left: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #appInfo2 {
+    padding-left: 0px;
+  }
+
+  #appTablets {
+    margin-top: -120px;
   }
 }
 
