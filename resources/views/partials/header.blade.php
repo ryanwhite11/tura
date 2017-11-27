@@ -1,7 +1,7 @@
 <header id="mainHeader">
 		<h2 class="hide">Header</h2>
 		
-		<nav class="d-none d-sm-block" id="headerNav">
+		<nav class="d-none d-md-block" id="headerNav">
 			<h3 class="hide">Main Navigation</h3>
 			<ul>
 				<li class="d-none d-lg-inline-block"><a href="#">HOME</a></li>

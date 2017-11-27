@@ -17,6 +17,7 @@
         
         @include('partials.header')
 
+
         <section id="mainLanding" class="container-fluid">
         <h2 class="hide">Tura Landing</h2>
             <div class="row align-items-center justify-content-center">
@@ -35,7 +36,7 @@
 
         <section class="container" id="whatCon">
             <div class="row">
-                <div class="col-12 col-md-10 offset-md-1" id="whatTura">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-9" id="whatTura">
                     <h2>What Is Tura?</h2>
                     <h3 class="green">designed for the plant lover</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -44,11 +45,19 @@
                     consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
                     <div class="buttonRed"><a href="#">BUTTON</a></div>
                 </div>
-                <div class="col-12">
-                    <img src="img/greenPlant.jpg" alt="Plant Lover Image" id="personalImg">
+                <div class="col-12 col-lg-9 offset-lg-3">
+                    <picture>
+                        <source srcset="img/greenPlant.png" media="(min-width: 992px)">
+                        <img src="img/greenPlant.jpg" alt="Plant Lover Image" id="personalImg">
+                    </picture>
+                    
                 </div>
 
-                <div class="col-12 col-md-10">
+                <div class="d-none d-lg-block col-lg-4">
+                    <img src="img/potPlant.png" alt="Plant Container Image" id="plantPot">
+                </div>
+
+                <div class="col-12 col-md-10 col-lg-8" id="personalCon">
                     <h2>Personal Gardener</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -88,17 +97,17 @@
                         <h3 class="green">where science meets nature</h3> 
                     </div>
 
-                    <div class="col-12 col-sm-6 col-md-4 featureInfoCon" id="featureCon1">
+                    <div class="col-12  col-md-4 featureInfoCon" id="featureCon1">
                         <h2 class="green">Termperature Sensor</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur.</p>
                     </div>
 
-                    <div class="col-12 col-sm-3 col-md-3 featureInfoCon" id="featureCon2">
+                    <div class="col-12 col-md-3 featureInfoCon" id="featureCon2">
                         <h2 class="green">Light Sensor</h2>
                         <p>Lorem ipsum dolor sit amet.</p>
                     </div>
 
-                    <div class="col-12 col-sm-3 col-md-3 featureInfoCon" id="featureCon3">
+                    <div class="col-12 col-md-3 featureInfoCon" id="featureCon3">
                         <h2 class="green">Moisture Sensor</h2>
                         <p>Lorem ipsum dolor sit amer, lorem.</p>
                     </div>
@@ -107,7 +116,7 @@
                         <picture>
                             <source srcset="img/plant-lrg.jpg" media="(min-width:992px)">
                             <source srcset="img/plant-med.jpg" media="(min-width:768px)">
-                            <img src="img/plant.jpg" alt="Tura Potted Plant">
+                            <img src="img/plant-small.jpg" alt="Tura Potted Plant">
                         </picture>
                     </div>
                     
@@ -127,11 +136,11 @@
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>      
                         <div class="buttonRed"><a href="#">Download</a></div>            
                     </div>
-                    <div class="col-12 col-sm-8 offset-sm-2" id="appPhones">
+                    <div class="col-12 col-sm-8 offset-sm-2 col-lg-4 offset-lg-1" id="appPhones">
                         <img src="img/iphones.png" alt="Tura App Smartphone Image">
                         
                     </div>
-                    <div class="col-12 col-md-10" id="appInfo2">
+                    <div class="col-12 col-md-10 col-lg-6" id="appInfo2">
                         <h2>Monitor Your Plants From Anywhere</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>      
