@@ -4,7 +4,8 @@
 $black: #272a27;
 $white: #eaeaea;
 $green: #697769;
-$lightGreen: #3b3e3b;
+$lightGreen: #9FB59E;
+$darkGreen: #3b3e3b;
 $red: #e4d1cb;
 $arial: 'Arial';
 $arialBold: 'Arial Bold';
@@ -147,7 +148,7 @@ body{
 
 	h2{
 		padding-bottom: 15px;
-		border-bottom: 2px solid $lightGreen;
+		border-bottom: 2px solid $darkGreen;
 		margin-bottom: 25px;
 	}
 }
@@ -430,7 +431,7 @@ body{
 
 	//HEADER 
 	#mainHeader{
-		background-color: rgba(105,119,105,0.9);
+		background-color: rgba(105,119,105,1);
 		height: 70px;
 		width: 100%;
 	}
@@ -476,6 +477,14 @@ body{
 		right: auto;
 		left: 0;
 		margin: 10px 0 0 20px;
+	}
+
+	//FOOTER
+	#subscribeButtonCon{
+		width: 160px;
+	}
+	#subscribeInput{
+		width: 110px
 	}
 
 
@@ -630,6 +639,10 @@ body{
 		li{
 			width: 120px;
 			text-align: center;
+			a:hover{
+				color: $darkGreen;
+
+			}
 		}
 	}
 	#turaIconCon{
@@ -665,6 +678,13 @@ body{
 			transition: 0.3s;
 			color: $green;
 		}
+	}
+
+	#subscribeButtonCon{
+		width: 220px;
+	}
+	#subscribeInput{
+		width: 170px
 	}
 
 	//ADD HOVER EFFECTS
@@ -772,6 +792,31 @@ body{
 	}
 	#appTablets{
 		margin-top: -120px;
+	}
+	#appInfo{
+		text-align: left;
+		.buttonRed{
+			margin-left: 0px;
+		}
+	}
+
+	//ORDER 
+	#orderCon{
+		background: url('../img/greenPlant2-lrg.png');
+		text-align: center;
+		background-size: auto 100%;
+		background-position: left center;
+		background-repeat: no-repeat;
+		padding-top: 100px;
+		padding-bottom: 100px;
+
+		#orderInfo{
+			margin-bottom: 0px;
+		}
+		.buttonGreen{
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 
 }

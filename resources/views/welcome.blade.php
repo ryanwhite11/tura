@@ -129,7 +129,7 @@
             <h2 class="hide">App Info</h2>
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-10 offset-md-1 col-xl-6" id="appInfo">
+                    <div class="col-12 col-md-10 offset-md-1 col-xl-6 offset-xl-0" id="appInfo">
                         <h2>The App</h2>
                         <h3>connecting to your plants</h3>     
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -158,7 +158,7 @@
             <h2 class="hide">Tura Video</h2>
             <div class="container">
                 <div class="row justify-content-center align-items-center">
-                    <div class="col-8">
+                    <div class="col-8 col-md-4">
                         <img src="img/logo.png" alt="Logo Video Placeholder">
                     </div>
                 </div>
@@ -169,7 +169,7 @@
             <h2 class="hide">Order A Tura</h2>
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-12 col-sm-11 col-md-8" id="orderInfo">
+                    <div class="col-12 col-sm-11 col-md-8 col-xl-6 offset-xl-5" id="orderInfo">
                         <h2>Get Your Tura Now</h2>
                         <h3>start growing today</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
