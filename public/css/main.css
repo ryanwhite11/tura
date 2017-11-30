@@ -869,6 +869,10 @@ body {
 
   #appPhones {
     margin-top: 0px;
+
+  #orderCon {
+    margin: 100px 0;
+
   }
 }
 @media screen and (min-width: 1200px) {
