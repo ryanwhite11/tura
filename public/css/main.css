@@ -829,6 +829,10 @@ body {
     margin-top: 80px;
     padding-left: 50px;
   }
+
+  #orderCon {
+    margin: 100px 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   #appInfo2 {
