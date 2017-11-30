@@ -131,7 +131,7 @@ p, h1, h2, h3, h4, h5, h6 {
 p {
   font-family: "Arial";
   font-size: 1rem;
-  line-height: 26px;
+  line-height: 24px;
   letter-spacing: 0.025em;
 }
 
@@ -145,7 +145,7 @@ h2 {
 
 h3 {
   font-family: "LibreBaskerville-Regular";
-  line-height: 40px;
+  line-height: 50px;
   letter-spacing: 0.05em;
   font-size: 1.875rem;
   text-transform: lowercase;
@@ -329,8 +329,12 @@ body {
 }
 
 #mainLanding {
-  background: #697769;
+  background-image: url("../img/bg-mobile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
+  position: relative;
 }
 #mainLanding .row {
   height: 100%;
@@ -392,7 +396,7 @@ body {
 
 #indoorCon {
   margin-top: 50px;
-  height: 450px;
+  height: 600px;
   background: url("../img/greenPlantBG.jpg");
   background-size: cover;
   background-position: center;
@@ -467,7 +471,7 @@ body {
 }
 
 #turaVideoCon {
-  height: 500px;
+  height: 600px;
   background: #e4d1cb;
 }
 #turaVideoCon .container, #turaVideoCon .row {
@@ -475,7 +479,7 @@ body {
 }
 
 #orderCon {
-  margin: 60px 0;
+  margin: 150px 0;
 }
 #orderCon h2, #orderCon h3, #orderCon p {
   margin-bottom: 40px;
@@ -495,8 +499,25 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
+  #bgVideo {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+    width: auto;
+    height: auto;
+    z-index: -100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #mainLanding {
+    background-image: none;
+  }
+
   #mainHeader {
-    background-color: #697769;
+    background-color: rgba(105, 119, 105, 0);
     height: 70px;
     width: 100%;
   }
@@ -525,7 +546,7 @@ body {
     margin-right: 20px;
   }
   #headerNav ul {
-    margin-top: 13px;
+    margin-top: 30px;
   }
   #headerNav ul li a {
     text-decoration: none;
@@ -578,7 +599,7 @@ body {
   }
 
   #whatCon {
-    margin-top: 100px;
+    margin-top: 150px;
   }
   #whatCon .buttonRed {
     margin-top: 40px;
@@ -595,11 +616,11 @@ body {
   }
 
   #indoorCon {
-    margin-top: 100px;
+    margin-top: 150px;
   }
 
   #worksCon {
-    margin-top: 100px;
+    margin-top: 150px;
   }
 
   #featureInfoHead {
@@ -634,7 +655,7 @@ body {
   }
 
   #appCon {
-    padding-top: 100px;
+    padding-top: 150px;
   }
 
   #appInfo {
@@ -667,10 +688,26 @@ body {
   }
 }
 @media screen and (min-width: 992px) {
+  #whatCon {
+    margin-top: 150px;
+  }
+
+  #whatTura {
+    padding-right: 150px;
+  }
+
+  #personalCon {
+    padding-right: 60px;
+  }
+
+  .breakText {
+    width: 310px;
+  }
+
   #headerNav {
     width: 100%;
     margin-right: 0px;
-    padding: 0 40px;
+    padding: 0 50px;
   }
   #headerNav .buttonWhite {
     margin: 0;
@@ -692,7 +729,7 @@ body {
     align-items: center;
   }
   #headerNav li {
-    width: 120px;
+    width: 150px;
     text-align: center;
   }
   #headerNav li a:hover {
@@ -826,11 +863,19 @@ body {
   }
 
   #appInfo2 {
-    margin-top: 80px;
+    margin-top: 50px;
     padding-left: 50px;
+  }
+
+  #appPhones {
+    margin-top: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
+  #headerNav {
+    padding: 0 100px;
+  }
+
   #appInfo2 {
     padding-left: 0px;
   }

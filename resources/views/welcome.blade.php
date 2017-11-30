@@ -20,6 +20,13 @@
 
         <section id="mainLanding" class="container-fluid">
         <h2 class="hide">Tura Landing</h2>
+
+            <video loop autoplay poster="img/background.jpg" id="bgVideo" class="d-none d-md-block">
+                <source src="videos/bgVideo.webm" type="video/webm">
+                <source src="videos/bgVideo.mp4" type="video/mp4">
+                <source src="videos/bgVideo.ogv" type="video/ogg">
+            </video>
+
             <div class="row align-items-center justify-content-center">
                 <div class="col-10">
                     <img src="img/logo.png" alt="Tura Logo" id="landingLogo" class="align-self-center">
@@ -47,7 +54,7 @@
                 </div>
                 <div class="col-12 col-lg-9 offset-lg-3">
                     <picture>
-                        <source srcset="img/greenPlant.png" media="(min-width: 992px)">
+                        <source srcset="img/greenPlant.png" media="(min-width: 1000px)">
                         <img src="img/greenPlant.jpg" alt="Plant Lover Image" id="personalImg">
                     </picture>
                     
@@ -62,9 +69,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
                     <div id="personalDotCon">
                         <div class="personalDot"><a href="#"></a></div>
                         <div class="personalDot"><a href="#"></a></div>
@@ -98,17 +103,17 @@
                     </div>
 
                     <div class="col-12  col-md-4 featureInfoCon" id="featureCon1">
-                        <h2 class="green">Termperature Sensor</h2>
+                        <h2 class="green"  >Termperature Sensor</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur.</p>
                     </div>
 
                     <div class="col-12 col-md-3 featureInfoCon" id="featureCon2">
-                        <h2 class="green">Light Sensor</h2>
+                        <h2 class="green" >Light Sensor</h2>
                         <p>Lorem ipsum dolor sit amet.</p>
                     </div>
 
                     <div class="col-12 col-md-3 featureInfoCon" id="featureCon3">
-                        <h2 class="green">Moisture Sensor</h2>
+                        <h2 class="green" >Moisture Sensor</h2>
                         <p>Lorem ipsum dolor sit amer, lorem.</p>
                     </div>
 
@@ -131,7 +136,7 @@
                 <div class="row">
                     <div class="col-12 col-md-10 offset-md-1 col-xl-6 offset-xl-0" id="appInfo">
                         <h2>The App</h2>
-                        <h3>connecting to your plants</h3>     
+                        <h3 class="breakText">connecting to your plants</h3>     
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>      
                         <div class="buttonRed"><a href="#">Download</a></div>            
