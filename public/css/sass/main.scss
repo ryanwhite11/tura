@@ -32,7 +32,7 @@ p,h1,h2,h3,h4,h5,h6{
 p{
 	font-family: $arial;
 	font-size: 1rem;
-	line-height: 26px;
+	line-height: 24px;
 	letter-spacing: 0.025em;
 }
 
@@ -46,7 +46,7 @@ h2{
 
 h3{
 	font-family: $libreReg;
-	line-height: 40px;
+	line-height: 50px;
 	letter-spacing: 0.05em;
 	font-size: 1.875rem;
 	text-transform: lowercase;
@@ -237,13 +237,22 @@ body{
 }
 
 //Landing
+
 #mainLanding{
-	background: $green;
+	background-image: url('../img/bg-mobile.jpg');
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 	height: 100vh;
+	position: relative;
 
 	.row{
 		height: 100%;
 	}
+}
+
+#leavesImg{
+
 }
 
 #landingLogo{
@@ -305,7 +314,7 @@ body{
 //Indoor Outdoor
 #indoorCon{
 	margin-top: 50px;
-	height: 450px;
+	height: 600px;
 	background: url('../img/greenPlantBG.jpg');
 	background-size: cover;
 	background-position: center;
@@ -396,7 +405,7 @@ body{
 
 //Video Section
 #turaVideoCon{
-	height: 500px;
+	height: 600px;
 	background: $red;
 
 	.container,.row{
@@ -408,13 +417,14 @@ body{
 
 //Order Tura
 #orderCon{
-	margin: 60px 0;
+	margin: 150px 0;
 
 	h2,h3,p{
 		margin-bottom: 40px;
 	}
 }
 @media screen and (min-width: 576px){
+
 	#subscribeButtonCon{
 		width: 155px;
 	}
@@ -429,9 +439,27 @@ body{
 
 @media screen and (min-width: 768px){
 
+	#bgVideo{
+	position: absolute;
+    min-width: 100%; 
+  	min-height: 100%; 
+  	/* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  	width: auto;
+  	height: auto;
+    z-index: -100;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%,-50%);
+	}
+
+	#mainLanding{
+		background-image: none;
+
+	}
+
 	//HEADER 
 	#mainHeader{
-		background-color: rgba(105,119,105,1);
+		background-color: rgba(105,119,105,0);
 		height: 70px;
 		width: 100%;
 	}
@@ -459,7 +487,7 @@ body{
 		margin-right: 20px;
 
 		ul{
-			margin-top: 13px;
+			margin-top: 30px;
 
 			li a{
 				text-decoration: none;
@@ -517,7 +545,7 @@ body{
 
 	//WHAT CON
 	#whatCon{
-		margin-top: 100px;
+		margin-top: 150px;
 		.buttonRed{
 			margin-top: 40px;
 			margin-left: auto;
@@ -535,13 +563,13 @@ body{
 
 	//INDOOR OUTDOOR
 	#indoorCon{
-		margin-top: 100px;
+		margin-top: 150px;
 
 	}
 
 	//APP
 	#worksCon{
-		margin-top: 100px;
+		margin-top: 150px;
 	}
 	#featureInfoHead{
 		text-align: center;
@@ -574,7 +602,7 @@ body{
 	}
 
 	#appCon{
-		padding-top: 100px;
+		padding-top: 150px;
 	}
 	#appInfo{
 		text-align: center;
@@ -611,12 +639,33 @@ body{
 
 }
 
+
+
 @media screen and (min-width: 992px){
+
+	#whatCon {
+    margin-top: 150px;
+	}
+
+	#whatTura{
+		padding-right: 150px;
+	}
+
+	#personalCon{
+		padding-right: 60px;
+	}
+
+	.breakText{
+		width: 310px;
+	}
+
+
+
 	//HEADER
 	#headerNav{
 		width: 100%;
 		margin-right: 0px;
-		padding: 0 40px;
+		padding: 0 50px;
 		.buttonWhite{
 			margin: 0;
 		}
@@ -637,7 +686,7 @@ body{
 			-webkit-box-align: center;-ms-flex-align: center;align-items: center;
 		}
 		li{
-			width: 120px;
+			width: 150px;
 			text-align: center;
 			a:hover{
 				color: $darkGreen;
@@ -778,19 +827,27 @@ body{
 		margin-bottom: 80px;
 	}
 	#appInfo2{
-		margin-top: 80px;
+		margin-top: 50px;
 		padding-left: 50px;
 	}
+
+	#appPhones{
+		margin-top: 0px;
 
 	//ORDER 
 	#orderCon{
 	margin: 100px 0;
+
 	}
 	
 
 }
 
 @media screen and (min-width: 1200px){
+
+	#headerNav{
+		padding: 0 100px;
+	}
 
 	#appInfo2{
 		padding-left: 0px;
