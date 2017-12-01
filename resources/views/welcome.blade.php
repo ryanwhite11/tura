@@ -7,9 +7,9 @@
         <h2 class="hide">Tura Landing</h2>
 
             <video loop autoplay poster="img/background.jpg" id="bgVideo" class="d-none d-md-block">
-                <source src="videos/bgVideo.webm" type="video/webm">
+                {{-- <source src="videos/bgVideo.webm" type="video/webm"> --}}
                 <source src="videos/bgVideo.mp4" type="video/mp4">
-                <source src="videos/bgVideo.ogv" type="video/ogg">
+                {{-- <source src="videos/bgVideo.ogv" type="video/ogg"> --}}
             </video>
 
             <div class="row align-items-center justify-content-center">

@@ -238,6 +238,36 @@ body {
   position: fixed;
   top: 0;
   z-index: 99;
+  width: 100%;
+}
+
+#mobileMenu {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: #9FB59E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  right: -100%;
+  opacity: 0;
+  transition: 0.3s;
+}
+#mobileMenu li {
+  margin: 30px 0;
+}
+#mobileMenu li a {
+  color: #eaeaea;
+}
+#mobileMenu li a:hover {
+  text-decoration: none;
+}
+
+#mobileMenu.openMenu {
+  right: 0;
+  opacity: 1;
+  transition: 0.5s;
 }
 
 #mainFooter {
@@ -600,7 +630,7 @@ body {
     background: none;
     right: auto;
     left: 0;
-    margin: 10px 0 0 20px;
+    margin: 25px 0 0 20px;
   }
 
   #subscribeButtonCon {

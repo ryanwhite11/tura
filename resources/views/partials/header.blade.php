@@ -1,6 +1,18 @@
 <header id="mainHeader">
 		<h2 class="hide">Header</h2>
 		
+		<nav class="d-lg-none" id="mobileMenu">
+			<h3 class="hide">Mobile Navigation</h3>
+			<ul>
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">ABOUT</a></li>
+				<li><a href="#">DEMO</a></li>
+				<li class="d-md-none"><a href="#">ORDER</a></li>
+			</ul>
+
+			
+		</nav>
+
 		<nav class="d-none d-md-block" id="headerNav">
 			<h3 class="hide">Main Navigation</h3>
 			<ul>
