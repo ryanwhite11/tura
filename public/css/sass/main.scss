@@ -136,6 +136,7 @@ body{
 	z-index: 99;
 }
 
+
 // FOOTER
 #mainFooter{
 	padding: 60px 0;
@@ -282,6 +283,11 @@ body{
 	border-radius: 50px;
 }
 
+// HEADER
+
+
+
+
 
 //WHAT IS TURA CONTAINER
 #whatCon{
@@ -419,10 +425,49 @@ body{
 #orderCon{
 	margin: 150px 0;
 
-	h2,h3,p{
-		margin-bottom: 40px;
+		h2,h3,p{
+			margin-bottom: 40px;
+		}
+	}
+
+#orderformCon{
+	margin: 20px 10px;
+	padding: 100px 20px;
+	text-align: center;
+	background-image: url("/img/order-bg-desktop.jpg");
+	
+	h2, h3{
+		color: $white;
+	}
+	form{
+		margin-top: 50px;
+	}
+
+	input{
+		width: 90%;
+		background: none;
+		border: solid 2px #fff;
+		margin-bottom: 20px;
+		color: #fff;
+		padding: 5px 10px;
+		outline: none;
+	}
+	input::placeholder{
+		color: #fff;
+	}
+	button{
+		background-color: $white;
+		margin-bottom: 20px;
+		width: 90%;
+		color: $green;
+		outline: none;
+		padding: 5px 0;
 	}
 }
+
+
+
+
 @media screen and (min-width: 576px){
 
 	#subscribeButtonCon{
@@ -636,6 +681,18 @@ body{
 		margin-top: -10px;
 	}
 
+	#orderformCon{
+	padding: 100px 20px;
+	width: 650px;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	
+	input, button{
+		width: 50%;
+		
+	}
+	}
+
 
 }
 
@@ -833,14 +890,12 @@ body{
 
 	#appPhones{
 		margin-top: 0px;
+	}
 
 	//ORDER 
 	#orderCon{
 	margin: 100px 0;
-
 	}
-	
-
 }
 
 @media screen and (min-width: 1200px){
@@ -880,5 +935,4 @@ body{
 			margin-right: auto;
 		}
 	}
-
 }

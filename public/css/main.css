@@ -44,15 +44,21 @@
   display: block;
   position: fixed;
   overflow: hidden;
-  margin: 10px 20px 0 0;
+  margin: 20px 20px 0 0;
   right: 0;
   padding: 0;
+  border-radius: 500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   width: 50px;
   height: 46px;
   font-size: 0;
+  color: #eaeaea;
   cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3);
   transition: 0.3s;
-  background-color: #697769;
   border: none;
 }
 .hamburger span {
@@ -63,7 +69,7 @@
   left: 10px;
   right: 10px;
   height: 3px;
-  background: white;
+  background-color: #eaeaea;
 }
 .hamburger span:before {
   position: absolute;
@@ -97,7 +103,7 @@
 }
 
 .hamburger.openButton {
-  background-color: #eaeaea;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .hamburger.openButton span {
   background: none;
@@ -106,13 +112,13 @@
   top: 0;
   transform: rotate(45deg);
   transition-delay: 0s, 0.3s;
-  background: #272a27;
+  background: #eaeaea;
 }
 .hamburger.openButton span::after {
   bottom: 0;
   transform: rotate(-45deg);
   transition-delay: 0s, 0.3s;
-  background: #272a27;
+  background: #eaeaea;
 }
 
 .hide {
@@ -485,6 +491,39 @@ body {
   margin-bottom: 40px;
 }
 
+#orderformCon {
+  margin: 20px 10px;
+  padding: 100px 20px;
+  text-align: center;
+  background-image: url("/img/order-bg-desktop.jpg");
+}
+#orderformCon h2, #orderformCon h3 {
+  color: #eaeaea;
+}
+#orderformCon form {
+  margin-top: 50px;
+}
+#orderformCon input {
+  width: 90%;
+  background: none;
+  border: solid 2px #fff;
+  margin-bottom: 20px;
+  color: #fff;
+  padding: 5px 10px;
+  outline: none;
+}
+#orderformCon input::placeholder {
+  color: #fff;
+}
+#orderformCon button {
+  background-color: #eaeaea;
+  margin-bottom: 20px;
+  width: 90%;
+  color: #697769;
+  outline: none;
+  padding: 5px 0;
+}
+
 @media screen and (min-width: 576px) {
   #subscribeButtonCon {
     width: 155px;
@@ -686,6 +725,16 @@ body {
   #updateP {
     margin-top: -10px;
   }
+
+  #orderformCon {
+    padding: 100px 20px;
+    width: 650px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+  }
+  #orderformCon input, #orderformCon button {
+    width: 50%;
+  }
 }
 @media screen and (min-width: 992px) {
   #whatCon {
@@ -869,10 +918,10 @@ body {
 
   #appPhones {
     margin-top: 0px;
+  }
 
   #orderCon {
     margin: 100px 0;
-
   }
 }
 @media screen and (min-width: 1200px) {

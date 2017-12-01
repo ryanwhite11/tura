@@ -165,21 +165,20 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                         <div class="buttonGreen"><a href="#">PRE-ORDER</a></div>
-                    </div> 
-
+                    </div>  
                 </div>
+
+                <div id="orderForm">
+                    <h3>pre-order your tura today</h3>
+                    <h2>Sign up to be notified when tura goes on sale</h2>
+
+                    <form>
+                        <input type="text" name="name" placeholder="Name">
+                        <input type="text" name="email">
+                    </form>
+                </div>
+                
             </div>
-        </section>
-
-        <section id="orderformCon">
-            <h3>pre-order your tura today</h3>
-            <h2>Sign up to be notified when tura goes on sale</h2>
-
-                <form id="orderform">
-                    <input type="text" name="name" placeholder="Full Name">
-                    <input type="text" name="email" placeholder="Email">
-                    <button type="submit" form="orderform" value="Submit">Submit</button>
-                </form>
         </section>
 
 
