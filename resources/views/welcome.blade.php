@@ -18,9 +18,9 @@
                     <div class="buttonWhite d-sm-none" id="landingButton"><a href="#">ORDER</a></div>
                 </div>
                 <div id="landingDotCon">
-                    <div class="landingDot"><a href="#"></a></div>
-                    <div class="landingDot"><a href="#"></a></div>
-                    <div class="landingDot"><a href="#"></a></div>
+                    <div class="landingDot" id="ldot0"><a href="#"></a></div>
+                    <div class="landingDot" id="ldot1"><a href="#"></a></div>
+                    <div class="landingDot" id="ldot2"><a href="#"></a></div>
                     
                 </div>
             </div>
@@ -31,11 +31,8 @@
                 <div class="col-12 col-md-10 offset-md-1 col-lg-9" id="whatTura">
                     <h2>What Is Tura?</h2>
                     <h3 class="green">designed for the plant lover</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-                    <div class="buttonRed"><a href="#">BUTTON</a></div>
+                    <p>Revolutionizing the way you care for your plants, Tura is a plant monitoring system designed for the plant lover. Using modern technology, Tura helps you remotely take care of your plants and teaches you about your plants needs. Tura is the ultimate plant monitoring system for those who truly care for their plants.</p>
+                    <div class="buttonRed"><a href="#worksCon">LEARN MORE</a></div>
                 </div>
                 <div class="col-12 col-lg-9 offset-lg-3">
                     <picture>
@@ -50,15 +47,12 @@
                 </div>
 
                 <div class="col-12 col-md-10 col-lg-8" id="personalCon">
-                    <h2>Personal Gardener</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                    <h2 id="infoHeader">Personal Gardener</h2>
+                    <p id="infoText">Never forget to care for your plants again, Tura is the only gardener you will ever need. With Tura, you can finally travel without worrying about your plants. Remotely water, feed and monitor your plants from any where in the world. Access the Tura app from any device and begin remotely gardening today.</p>
                     <div id="personalDotCon">
-                        <div class="personalDot"><a href="#"></a></div>
-                        <div class="personalDot"><a href="#"></a></div>
-                        <div class="personalDot"><a href="#"></a></div>
+                        <div class="personalDot activeDot" id="pdot0"><a href="#"></a></div>
+                        <div class="personalDot" id="pdot1"><a href="#"></a></div>
+                        <div class="personalDot" id="pdot2"><a href="#"></a></div>
                     </div>
                 </div>
                 
@@ -89,17 +83,17 @@
 
                     <div class="col-12  col-md-4 featureInfoCon" id="featureCon1">
                         <h2 class="green"  >Termperature Sensor</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                        <p>Never let your plants go cold.</p>
                     </div>
 
                     <div class="col-12 col-md-3 featureInfoCon" id="featureCon2">
                         <h2 class="green" >Light Sensor</h2>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Ensure your plants recieve enough sunlight.</p>
                     </div>
 
                     <div class="col-12 col-md-3 featureInfoCon" id="featureCon3">
                         <h2 class="green" >Moisture Sensor</h2>
-                        <p>Lorem ipsum dolor sit amer, lorem.</p>
+                        <p>Know when and how much to water your plants.</p>
                     </div>
 
                     <div class="col-12" id="pottedPlantCon">
@@ -122,8 +116,7 @@
                     <div class="col-12 col-md-10 offset-md-1 col-xl-6 offset-xl-0" id="appInfo">
                         <h2>The App</h2>
                         <h3 class="breakText">connecting to your plants</h3>     
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>      
+                        <p>Connecting you to your plants at all times, the Tura app is the best solution for monitoring and caring for your plants. Tura is the most advanced solution for tracking light, humidity and temperature to ensure optimal plant growth and health.</p>      
                         <div class="buttonRed"><a href="#">Download</a></div>            
                     </div>
                     <div class="col-12 col-sm-8 offset-sm-2 col-md-4 offset-md-1 col-xl-5 offset-xl-1" id="appPhones">
@@ -164,7 +157,7 @@
                         <h3>start growing today</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                        <div class="buttonGreen"><a href="#">PRE-ORDER</a></div>
+                        <div class="buttonGreen orderLink"><a href="#">PRE-ORDER</a></div>
                     </div> 
 
                 </div>
@@ -174,7 +167,7 @@
         <section id="orderformCon">
             <h3>pre-order your tura today</h3>
             <h2>Sign up to be notified when tura goes on sale</h2>
-
+            <h4 id="closeForm">&#x2715;</h4>
                 <form id="orderform">
                     <input type="text" name="name" placeholder="Full Name">
                     <input type="text" name="email" placeholder="Email">

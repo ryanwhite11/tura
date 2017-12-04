@@ -1,7 +1,8 @@
 $black: #272a27;
 $white: #eaeaea;
 $green: #697769;
-$lightGreen: #3b3e3b;
+$lightGreen: #9FB59E;
+$darkGreen: #3b3e3b;
 
 .hamburger {
 	display: block;
@@ -20,7 +21,7 @@ $lightGreen: #3b3e3b;
 	font-size: 0;
 	color: $white;
 	cursor: pointer;
-	background-color: rgba(0,0,0,0.3);
+	background-color: rgba(159,181,159,1);
 	transition: 0.3s;
 	border: none;
 

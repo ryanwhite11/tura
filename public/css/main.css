@@ -57,7 +57,7 @@
   font-size: 0;
   color: #eaeaea;
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #9fb59f;
   transition: 0.3s;
   border: none;
 }
@@ -404,7 +404,7 @@ body {
 }
 
 #whatCon {
-  margin-top: 60px;
+  padding-top: 60px;
 }
 #whatCon h2, #whatCon h3 {
   margin-bottom: 40px;
@@ -430,6 +430,14 @@ body {
   margin-right: 5px;
 }
 
+.activeDot {
+  background: #e4d1cb;
+}
+
+.personalDot:hover {
+  cursor: pointer;
+}
+
 #indoorCon {
   margin-top: 50px;
   height: 600px;
@@ -449,7 +457,7 @@ body {
 }
 
 #worksCon {
-  margin-top: 60px;
+  padding-top: 60px;
 }
 
 #featureInfoHead h2 {
@@ -521,11 +529,35 @@ body {
   margin-bottom: 40px;
 }
 
+#closeForm {
+  color: #eaeaea;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2rem;
+  margin: 20px 20px 0 0;
+}
+
+#closeForm:hover, #closeForm:active, #closeForm:focus {
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 #orderformCon {
-  margin: 20px 10px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 99;
+  display: none;
   padding: 100px 20px;
   text-align: center;
   background-image: url("/img/order-bg-desktop.jpg");
+  opacity: 0;
+  transition: 1s;
 }
 #orderformCon h2, #orderformCon h3 {
   color: #eaeaea;
@@ -587,8 +619,9 @@ body {
 
   #mainHeader {
     background-color: rgba(105, 119, 105, 0);
-    height: 70px;
     width: 100%;
+    height: 100px;
+    transition: 0.2s;
   }
 
   #headerNav {
@@ -627,7 +660,6 @@ body {
   }
 
   .hamburger {
-    background: none;
     right: auto;
     left: 0;
     margin: 25px 0 0 20px;
@@ -668,7 +700,7 @@ body {
   }
 
   #whatCon {
-    margin-top: 150px;
+    padding-top: 150px;
   }
   #whatCon .buttonRed {
     margin-top: 40px;
@@ -689,7 +721,7 @@ body {
   }
 
   #worksCon {
-    margin-top: 150px;
+    padding-top: 150px;
   }
 
   #featureInfoHead {
@@ -765,12 +797,19 @@ body {
   #orderformCon input, #orderformCon button {
     width: 50%;
   }
-}
-@media screen and (min-width: 992px) {
-  #whatCon {
-    margin-top: 150px;
+
+  #closeForm {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
 
+  #closeForm:hover {
+    opacity: 0.5;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+}
+@media screen and (min-width: 992px) {
   #whatTura {
     padding-right: 150px;
   }
