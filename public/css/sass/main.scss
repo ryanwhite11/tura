@@ -32,7 +32,7 @@ p,h1,h2,h3,h4,h5,h6{
 p{
 	font-family: $arial;
 	font-size: 1rem;
-	line-height: 24px;
+	line-height: 28px;
 	letter-spacing: 0.025em;
 }
 
@@ -46,7 +46,7 @@ h2{
 
 h3{
 	font-family: $libreReg;
-	line-height: 50px;
+	line-height: 40px;
 	letter-spacing: 0.05em;
 	font-size: 1.875rem;
 	text-transform: lowercase;
@@ -68,6 +68,11 @@ body{
 }
 .black{
 	color: $black;
+}
+
+.activeButton{
+	background-color: $white;
+
 }
 
 .buttonWhite{
@@ -151,7 +156,8 @@ body{
 	transition: 0.3s;
 
 	li {
-		margin: 30px 0;
+		margin: 60px 0;
+		letter-spacing: 2px;
 
 		a{
 			color: $white;
@@ -271,6 +277,18 @@ body{
 
 //Landing
 
+#landingTextCon{
+	h2{
+		letter-spacing: 3px;
+		font-family: $arial;
+	}
+	h3{
+		letter-spacing: 4px;
+		font-size: 40px;
+		margin-bottom: 20px;
+	}
+}
+
 #mainLanding{
 	background-image: url('../img/bg-mobile.jpg');
 	background-position: center;
@@ -289,27 +307,36 @@ body{
 }
 
 #landingLogo{
-	max-width: 240px;
+	width: 240px;
+	max-width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
+}
+
+#landingTextCon{
+	text-align: center;
+	
+	a,h2,h3,h4,p{
+		color: $white;
+	}
 }
 
 #landingButton{
 	margin-top: 40px;
 }
 
+
 #landingDotCon{
 	position: absolute;
 	bottom: 0;
-	margin-bottom: 50px;
+	padding-bottom: 50px;
 }
 
 .landingDot{
 	display: inline-block;
 	width: 14px;
 	height: 14px;
-	background: none;
 	margin: 0 5px;
 	border: 2px solid $white;
 	border-radius: 50px;
@@ -323,19 +350,28 @@ body{
 #whatCon{
 	padding-top: 60px;
 
-	h2,h3{
+	h3{
 		margin-bottom: 40px;
+	}
+
+	h2{
+		margin-bottom: 10px;
 	}
 
 	.buttonRed{
 		margin-top: 40px;
 	}
 }
+
+#infoText{
+	height: 200px;
+}
 #personalImg{
 	margin: 40px 0 60px 0;
 }
 #personalDotCon{
 	margin-top: 10px;
+	text-align: center;
 }
 
 .personalDot{
@@ -383,21 +419,22 @@ body{
 #featureInfoHead{
 
 	h2{
-		margin-bottom: 40px;
+		margin-bottom: 10px;
 	}
 	h3{
-		margin-bottom: 75px;
+		margin-bottom: 40px;
 	}
 }
 
 .featureInfoCon{
-	margin-bottom: 55px;
+	margin-bottom: 35px;
 	h2{
-		margin-bottom: 15px;
+		margin-bottom: 5px;
 	}
 }
 
 #pottedPlantCon{
+	padding: 0px;
 	img{
 		width: 100%;
 		height: 100%;
@@ -417,7 +454,7 @@ body{
 
 #appInfo{
 	h2{
-		margin-bottom: 40px;
+		margin-bottom: 20px;
 	}
 	h3{
 		margin-bottom: 40px;
@@ -429,7 +466,7 @@ body{
 
 #appInfo2{
 	h2{
-		margin-bottom: 40px;
+		margin-bottom: 10px;
 	}
 }
 
@@ -461,10 +498,13 @@ body{
 
 //Order Tura
 #orderCon{
-	margin: 150px 0;
+	margin: 80px 0;
 
-		h2,h3,p{
+		h3,p{
 			margin-bottom: 40px;
+		}
+		h2{
+			margin-bottom: 10px;
 		}
 	}
 
@@ -483,19 +523,34 @@ body{
 	cursor: pointer;
 }
 
+#orderFormBlur{
+	position: fixed;
+	display: none;
+	opacity: 0;
+	z-index: 99;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.8);
+}
+
 #orderformCon{
 	position: fixed;
 	top: 0;
 	bottom: 0;
 	left: 0;
+	display: none;
+	opacity: 0;
 	right: 0;
 	margin: auto;
 	z-index: 99;
-	display: none;
 	padding: 100px 20px;
 	text-align: center;
 	background-image: url("/img/order-bg-desktop.jpg");
-	opacity: 0;
+	background-repeat: no-repeat;
 	transition: 1s;
 	
 	h2, h3{
@@ -514,9 +569,7 @@ body{
 		padding: 5px 10px;
 		outline: none;
 	}
-	input::placeholder{
-		color: #fff;
-	}
+	
 	button{
 		background-color: $white;
 		margin-bottom: 20px;
@@ -528,6 +581,20 @@ body{
 }
 
 
+@media screen and (min-width: 375px){
+
+	#orderformCon{
+	padding: 150px 20px;
+	}
+}
+
+@media screen and (min-width: 414px){
+	#orderformCon{
+
+		background-image: url("/img/order-bg-mobile.jpg");
+
+	}
+}
 
 
 @media screen and (min-width: 576px){
@@ -541,10 +608,61 @@ body{
 	.footerInfoCon{
 		margin-top: 0px;
 	}
+
+	#orderformCon{
+
+		background-image: url("/img/order-bg-desktop.jpg");
+
+	}
+
+	#landingTextCon{
+
+	h3{
+		letter-spacing: 5px;
+		font-size: 60px;
+		margin-bottom: 30px;
+	}
+}
+}
+
+@media screen and (min-width: 600px){
+
+	#infoText{
+	height: 150px;
+	}
+
+	#landingLogo{
+		width: 300px;
+	}
+
+	#whatCon h2{
+		margin-bottom: 20px;
+	}
+
+	#featureInfoHead h2{
+		margin-bottom: 20px;
+	}
+	#orderCon h2{
+		margin-bottom: 20px;
+	}
+
+	.featureInfoCon, #featureInfoHead{
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	.featureInfoCon{
+		margin-bottom: 20px;
+	}
 }
 
 
 @media screen and (min-width: 768px){
+
+	h3{
+	line-height: 50px;
+	}
+
 
 	#bgVideo{
 	position: absolute;
@@ -568,7 +686,7 @@ body{
 	#mainHeader{
 		background-color: rgba(105,119,105,0);
 		width: 100%;
-		height: 100px;
+		height: 74px;
 		transition: 0.2s;
 	}
 
@@ -576,7 +694,7 @@ body{
 		width: 100%;
 		.buttonWhite{
 			margin-left: auto;
-			margin-right: 0;
+			margin-right: 20px;
 		}
 	}
 
@@ -592,10 +710,9 @@ body{
 		top: 0;
 		right: 0;
 		height: 70px;
-		margin-right: 20px;
 
 		ul{
-			margin-top: 30px;
+			margin-top: 15px;
 
 			li a{
 				text-decoration: none;
@@ -611,7 +728,7 @@ body{
 	.hamburger{
 		right: auto;
 		left: 0;
-		margin: 25px 0 0 20px;
+		margin: 15px 0 0 20px;
 	}
 
 	//FOOTER
@@ -652,7 +769,7 @@ body{
 
 	//WHAT CON
 	#whatCon{
-		padding-top: 150px;
+		padding-top: 100px;
 		.buttonRed{
 			margin-top: 40px;
 			margin-left: auto;
@@ -666,26 +783,30 @@ body{
 
 	#whatTura{
 		text-align: center;
+		width: 700px;
+		margin: 0 auto;
 	}
 
 	//INDOOR OUTDOOR
 	#indoorCon{
-		margin-top: 150px;
+		margin-top: 100px;
 
 	}
 
 	//APP
 	#worksCon{
-		padding-top: 150px;
+		padding-top: 100px;
 	}
 	#featureInfoHead{
+		padding: 0px;
 		text-align: center;
 		h3{
-			margin-bottom: 140px;
+			margin-bottom: 100px;
 		}
 	}
 	.featureInfoCon{
 		margin-bottom: 0px;
+		padding: 0px;
 		position: absolute;
 		z-index: 1;
 
@@ -695,29 +816,39 @@ body{
 	}
 
 	#featureCon1{
-		margin-top: 250px;
+		margin-top: 200px;
 		right: 0;
 	}
 	#featureCon2{
-		margin-top: 380px;
+		margin-top: 480px;
+		margin-left: 3%;
 	}
 
 	#featureCon3{
 		margin-top: 620px;
 		right: 0;
-		margin-right: 5%;
+		margin-right: 0;
 	}
 
 	#appCon{
-		padding-top: 150px;
+		padding-top: 100px;
 	}
 	#appInfo{
-		text-align: center;
-
 		.buttonRed{
 			margin-left: auto;
 			margin-right: auto;
 		}
+	}
+
+	#appPhones{
+		width: 50%;
+
+	}
+
+	//PERSONAL CON
+
+	#personalCon{
+		text-align: center;
 	}
 
 	//ORDER
@@ -728,10 +859,10 @@ body{
 		background-position: center;
 		background-repeat: no-repeat;
 		padding-top: 100px;
-		padding-bottom: 120px;
+		padding-bottom: 100px;
 
 		#orderInfo{
-			margin-bottom: 150px;
+			margin-bottom: 100px;
 		}
 		.buttonGreen{
 			margin-left: auto;
@@ -744,9 +875,11 @@ body{
 	}
 
 	#orderformCon{
-		padding: 100px 20px;
 		width: 650px;
-		margin: 0 auto;
+		height: 500px;
+		padding: 100px 20px;
+		margin: auto;
+		justify-content: center;
 		background-repeat: no-repeat;
 		
 		input, button{
@@ -777,13 +910,24 @@ body{
 
 	#personalCon{
 		padding-right: 60px;
+		text-align: left;
+	}
+
+	#personalDotCon{
+		text-align: left;
 	}
 
 	.breakText{
 		width: 310px;
 	}
 
+	#featureCon1 {
+    margin-top: 260px;
+	}
 
+	#featureCon2 {
+    margin-left: 5%;
+	}
 
 	//HEADER
 	#headerNav{
@@ -967,6 +1111,13 @@ body{
 
 @media screen and (min-width: 1200px){
 
+	#featureCon3 {
+    margin-top: 780px;
+	}
+
+	#featureCon2 {
+	    margin-top: 580px;
+	}
 	#headerNav{
 		padding: 0 100px;
 	}
@@ -983,6 +1134,8 @@ body{
 			margin-left: 0px;
 		}
 	}
+
+
 
 	//ORDER 
 	#orderCon{
