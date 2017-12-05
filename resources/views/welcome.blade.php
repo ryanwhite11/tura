@@ -5,12 +5,13 @@
 
         <section id="mainLanding" class="container-fluid">
         <h2 class="hide">Tura Landing</h2>
-
-            <video loop autoplay poster="img/background.jpg" id="bgVideo" class="d-none d-md-block">
-                {{-- <source src="videos/bgVideo.webm" type="video/webm"> --}}
-                <source src="videos/bgVideo.mp4" type="video/mp4">
-                {{-- <source src="videos/bgVideo.ogv" type="video/ogg"> --}}
-            </video>
+            
+            <div class="fullscreen-bg">
+                <video loop autoplay poster="img/background.jpg" class="fullscreen-bg_video d-none d-md-block">
+                    <source src="videos/bgVideo.mp4" type="video/mp4">
+                </video>
+            </div>
+            
 
             <div class="row align-items-center justify-content-center" id="landingArea">
                 <div class="col-10" id="landingTextCon">
@@ -125,8 +126,7 @@
                     </div>
                     <div class="col-12 col-md-10 offset-md-1 col-lg-6 col-xl-6 offset-xl-6" id="appInfo2">
                         <h2>Monitor Your Plants From Anywhere</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>      
+                        <p>Our app is designed and built for any device! The app allows you to monitor your plants when you’re not home. It also gives you access to information about your plants so that you know what they need and when. Download the app now and use it with tura for optimal performance.</p>      
                     </div>
 
                     <div class="col-12 col-sm-10 col-md-8 offset-sm-1 offset-md-2 col-xl-7 offset-xl-0" id="appTablets">
@@ -156,8 +156,7 @@
                     <div class="col-12 col-sm-11 col-md-8 col-xl-6 offset-xl-5" id="orderInfo">
                         <h2>Get Your Tura Now</h2>
                         <h3>start growing today</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <p>Pre-order your tura today and be one of the first people to start growing your plants with a computer!</p>
                         <div class="buttonGreen orderLink"><a href="#">PRE-ORDER</a></div>
                     </div> 
 
