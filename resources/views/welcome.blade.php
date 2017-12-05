@@ -12,13 +12,13 @@
                 {{-- <source src="videos/bgVideo.ogv" type="video/ogg"> --}}
             </video>
 
-            <div class="row align-items-center justify-content-center">
-                <div class="col-10">
+            <div class="row align-items-center justify-content-center" id="landingArea">
+                <div class="col-10" id="landingTextCon">
                     <img src="img/logo.png" alt="Tura Logo" id="landingLogo" class="align-self-center">
-                    <div class="buttonWhite d-sm-none" id="landingButton"><a href="#">ORDER</a></div>
+                    <div class="buttonWhite d-sm-none orderLink" id="landingButton"><a href="#">ORDER</a></div>
                 </div>
                 <div id="landingDotCon">
-                    <div class="landingDot" id="ldot0"><a href="#"></a></div>
+                    <div class="landingDot activeButton" id="ldot0"><a href="#"></a></div>
                     <div class="landingDot" id="ldot1"><a href="#"></a></div>
                     <div class="landingDot" id="ldot2"><a href="#"></a></div>
                     
@@ -28,7 +28,7 @@
 
         <section class="container" id="whatCon">
             <div class="row">
-                <div class="col-12 col-md-10 offset-md-1 col-lg-9" id="whatTura">
+                <div class="col-12 col-md-11 col-lg-9" id="whatTura">
                     <h2>What Is Tura?</h2>
                     <h3 class="green">designed for the plant lover</h3>
                     <p>Revolutionizing the way you care for your plants, Tura is a plant monitoring system designed for the plant lover. Using modern technology, Tura helps you remotely take care of your plants and teaches you about your plants needs. Tura is the ultimate plant monitoring system for those who truly care for their plants.</p>
@@ -46,9 +46,9 @@
                     <img src="img/potPlant.png" alt="Plant Container Image" id="plantPot">
                 </div>
 
-                <div class="col-12 col-md-10 col-lg-8" id="personalCon">
-                    <h2 id="infoHeader">Personal Gardener</h2>
-                    <p id="infoText">Never forget to care for your plants again, Tura is the only gardener you will ever need. With Tura, you can finally travel without worrying about your plants. Remotely water, feed and monitor your plants from any where in the world. Access the Tura app from any device and begin remotely gardening today.</p>
+                <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-0" id="personalCon">
+                    <h2 id="infoHeader">Your Personal Gardener</h2>
+                    <p id="infoText">Tura is the only gardener you will ever need. With Tura, you can finally travel without worrying about your plants. Remotely water, feed and monitor your plants from any where in the world. Access the Tura app from any device and begin remotely gardening today.</p>
                     <div id="personalDotCon">
                         <div class="personalDot activeDot" id="pdot0"><a href="#"></a></div>
                         <div class="personalDot" id="pdot1"><a href="#"></a></div>
@@ -74,7 +74,7 @@
 
         <section id="worksCon">
             <h2 class="hide">How Tura Works Section</h2>
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-12" id="featureInfoHead">
                         <h2>How Tura Works</h2>
@@ -91,7 +91,7 @@
                         <p>Ensure your plants recieve enough sunlight.</p>
                     </div>
 
-                    <div class="col-12 col-md-3 featureInfoCon" id="featureCon3">
+                    <div class="col-12 col-md-4 featureInfoCon" id="featureCon3">
                         <h2 class="green" >Moisture Sensor</h2>
                         <p>Know when and how much to water your plants.</p>
                     </div>
@@ -115,15 +115,15 @@
                 <div class="row">
                     <div class="col-12 col-md-10 offset-md-1 col-xl-6 offset-xl-0" id="appInfo">
                         <h2>The App</h2>
-                        <h3 class="breakText">connecting to your plants</h3>     
+                        <h3>connecting to your plants</h3>     
                         <p>Connecting you to your plants at all times, the Tura app is the best solution for monitoring and caring for your plants. Tura is the most advanced solution for tracking light, humidity and temperature to ensure optimal plant growth and health.</p>      
                         <div class="buttonRed"><a href="#">Download</a></div>            
                     </div>
-                    <div class="col-12 col-sm-8 offset-sm-2 col-md-4 offset-md-1 col-xl-5 offset-xl-1" id="appPhones">
+                    <div class="col-12 col-sm-8 offset-sm-2 col-xl-5 offset-xl-1" id="appPhones">
                         <img src="img/iphones.png" alt="Tura App Smartphone Image">
                         
                     </div>
-                    <div class="col-12 col-md-10 col-lg-6 col-xl-6 offset-xl-6" id="appInfo2">
+                    <div class="col-12 col-md-10 offset-md-1 col-lg-6 col-xl-6 offset-xl-6" id="appInfo2">
                         <h2>Monitor Your Plants From Anywhere</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>      
@@ -137,11 +137,12 @@
             </div>
         </section> 
 
+        <!-- Once we have designed our app, we will put a demo video here -->
         <section id="turaVideoCon">
             <h2 class="hide">Tura Video</h2>
             <div class="container">
                 <div class="row justify-content-center align-items-center">
-                    <div class="col-8 col-md-4">
+                    <div class="col-10 col-md-6 col-lg-4">
                         <img src="img/logo.png" alt="Logo Video Placeholder">
                     </div>
                 </div>
@@ -164,7 +165,10 @@
             </div>
         </section>
 
-        <section id="orderformCon">
+
+        <section>
+        <div id="orderFormBlur"></div>
+        <div id="orderformCon">
             <h3>pre-order your tura today</h3>
             <h2>Sign up to be notified when tura goes on sale</h2>
             <h4 id="closeForm">&#x2715;</h4>
@@ -173,6 +177,7 @@
                     <input type="text" name="email" placeholder="Email">
                     <button type="submit" form="orderform" value="Submit">Submit</button>
                 </form>
+        </div>
         </section>
 
 

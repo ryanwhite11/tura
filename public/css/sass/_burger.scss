@@ -12,14 +12,10 @@ $darkGreen: #3b3e3b;
 	right: 0;
 	padding: 0;
 	border-radius: 500px;
-	box-shadow: 0 0 10px rgba(0,0,0,0.3);
-	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.3);
-	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3);
-	-o-box-shadow: 0 0 10px rgba(0,0,0,0.3);
 	width: 50px;
 	height: 46px;
 	font-size: 0;
-	color: $white;
+	color: #ffffff;
 	cursor: pointer;
 	background-color: rgba(159,181,159,1);
 	transition: 0.3s;
@@ -33,7 +29,7 @@ $darkGreen: #3b3e3b;
 		left: 10px;
 		right: 10px;
 		height: 3px;
-		background-color: $white;
+		background-color: #ffffff;
 	}
 	span:before{
 		position: absolute;
@@ -41,7 +37,7 @@ $darkGreen: #3b3e3b;
 		left: 0;
 		width: 100%;
 		height: 3px;
-		background-color: $white;
+		background-color: #ffffff;
 		content: "";
 		top: -10px;
 		transition-duration: 0.3s;
@@ -55,7 +51,7 @@ $darkGreen: #3b3e3b;
 		left: 0;
 		width: 100%;
 		height: 3px;
-		background-color: $white;
+		background-color: #ffffff;
 		content: "";
 		bottom: -10px;
 		transition-duration: 0.3s;
@@ -78,12 +74,12 @@ $darkGreen: #3b3e3b;
 		top: 0;
 		transform: rotate(45deg);
 		transition-delay: 0s, 0.3s;
-		background: $white
+		background: #ffffff;
 	}
 	span::after {
 		bottom: 0;
 		transform: rotate(-45deg);
 		transition-delay: 0s, 0.3s;
-		background: $white
+		background: #ffffff;
 	}
 }
