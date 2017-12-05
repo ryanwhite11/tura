@@ -410,6 +410,16 @@ body {
   position: absolute;
   bottom: 0;
   padding-bottom: 50px;
+  width: 85px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .landingDot {
@@ -698,21 +708,22 @@ body {
     line-height: 50px;
   }
 
-  #bgVideo {
+  .fullscreen-bg {
     position: absolute;
-    min-width: 100%;
-    min-height: 100%;
-    /* Setting width & height to auto prevents the browser from stretching or squishing the video */
-    width: auto;
-    height: auto;
-    z-index: -100;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
   }
 
-  #mainLanding {
-    background-image: none;
+  .fullscreen-bg_video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
   }
 
   #mainHeader {
@@ -849,6 +860,7 @@ body {
   #featureCon2 {
     margin-top: 480px;
     margin-left: 3%;
+    left: 0;
   }
 
   #featureCon3 {
@@ -1147,7 +1159,7 @@ body {
     background: url("../img/greenPlant2-lrg.png");
     text-align: center;
     background-size: auto 100%;
-    background-position: left center;
+    background-position: center;
     background-repeat: no-repeat;
     padding-top: 100px;
     padding-bottom: 100px;
