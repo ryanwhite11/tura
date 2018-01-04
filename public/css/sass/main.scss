@@ -1,8 +1,9 @@
 @import 'fonts';
 @import 'burger';
+@import 'app';
 
 $black: #272a27;
-$white: #eaeaea;
+$white: #fff;
 $green: #697769;
 $lightGreen: #9FB59E;
 $darkGreen: #3b3e3b;
@@ -25,6 +26,8 @@ img{
 
 p,h1,h2,h3,h4,h5,h6{
 	color: $black;
+	-webkit-font-smoothing: antialiased;
+
 }
 
 // STYLES

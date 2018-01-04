@@ -117,6 +117,225 @@
   background: #ffffff;
 }
 
+h2 {
+  font-family: 'Arial';
+  text-transform: uppercase;
+  line-height: 25px;
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+  margin: 0px;
+}
+
+h3 {
+  font-family: 'LibreBaskerville-Regular';
+  margin: 0px;
+  text-transform: none !important;
+}
+
+#appHeader {
+  background-color: #697769;
+}
+
+#topBar {
+  border-bottom: solid 1.5px rgba(225, 225, 225, 0.3);
+  padding: 20px;
+  height: 60px;
+}
+#topBar h2 {
+  color: #eaeaea;
+  float: left;
+}
+#topBar img {
+  float: right;
+  margin-left: 20px;
+}
+#topBar #settingsIcon {
+  width: 25px;
+}
+#topBar #userIcon {
+  width: 30px;
+}
+
+#logo h3 {
+  color: #eaeaea;
+  font-size: 55px;
+  letter-spacing: 12px;
+  clear: both;
+  display: block;
+  text-align: center;
+  padding: 40px 0;
+}
+
+#plantImgCon {
+  padding: 0px;
+}
+
+#plantImg {
+  width: 100%;
+}
+
+#plantDetails {
+  background-color: #9FB59E;
+  padding: 20px;
+}
+
+.label {
+  color: #697769;
+  margin-bottom: 0px;
+}
+
+.field {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+#age {
+  margin-bottom: 0px;
+}
+
+#edit, #add {
+  color: #697769;
+  float: right;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+#editIcon {
+  width: 25px;
+  float: right;
+  margin-right: 10px;
+}
+
+#addCon {
+  width: 100%;
+  float: right;
+  margin: 20px 0;
+}
+
+#add {
+  float: right;
+}
+
+#addIcon {
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin-right: 15px;
+}
+
+#welcome {
+  padding: 20px;
+}
+#welcome h3, #welcome p {
+  color: #697769;
+}
+#welcome h3 {
+  padding-bottom: 20px;
+}
+
+#plantData {
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+#dataMenu {
+  margin-bottom: 50px;
+  text-align: center;
+}
+#dataMenu a {
+  display: inline-block;
+  margin-right: 40px;
+}
+#dataMenu a:last-child {
+  margin-right: 0px;
+}
+
+#message {
+  opacity: 0.7;
+}
+
+.dataMenuItem {
+  color: #000;
+  opacity: 0.3;
+  font-size: 14px;
+}
+
+#dataCon {
+  text-align: center;
+}
+#dataCon h3 {
+  font-size: 40px;
+  color: #B9CEDC;
+  margin-bottom: 10px;
+}
+
+#graph {
+  width: 60%;
+  margin: 30px 0;
+}
+
+#moisture {
+  color: #B9CEDC;
+  font-size: 20px;
+}
+
+@media all and (min-width: 768px) {
+  #appHeader {
+    background-color: #697769;
+    width: 100%;
+    height: 100px;
+    padding: 22px 40px;
+    position: relative;
+  }
+
+  #topBar {
+    border-bottom: solid 1.5px rgba(225, 225, 225, 0);
+    width: 40%;
+    float: right;
+    padding: 0 40px 0 0px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  #topBar h2 {
+    padding-top: 5px;
+  }
+
+  #logo {
+    width: 60%;
+    float: left;
+  }
+  #logo h3 {
+    padding: 0px;
+    text-align: left;
+  }
+
+  #mainCon {
+    clear: both;
+  }
+
+  #plantDetails {
+    padding: 30px;
+  }
+  #plantDetails p {
+    line-height: 25px;
+  }
+
+  #addCon {
+    margin: 0px;
+  }
+
+  #welcome {
+    padding: 40px;
+  }
+}
 .hide {
   display: none;
 }
@@ -128,6 +347,7 @@ img {
 
 p, h1, h2, h3, h4, h5, h6 {
   color: #272a27;
+  -webkit-font-smoothing: antialiased;
 }
 
 p {
@@ -166,7 +386,7 @@ body {
 }
 
 .white {
-  color: #eaeaea;
+  color: #fff;
 }
 
 .black {
@@ -174,7 +394,7 @@ body {
 }
 
 .activeButton {
-  background-color: #eaeaea;
+  background-color: #fff;
 }
 
 .buttonWhite {
@@ -183,14 +403,14 @@ body {
   background: none;
   width: 120px;
   margin: 0 auto;
-  border: 2px solid #eaeaea;
+  border: 2px solid #fff;
   padding: 8px 10px;
   text-transform: uppercase;
   cursor: pointer;
 }
 .buttonWhite a {
   text-decoration: none;
-  color: #eaeaea;
+  color: #fff;
   font-family: "HKGrotesk-SemiBold";
   line-height: 0px;
   font-size: .875rem;
@@ -208,7 +428,7 @@ body {
 }
 .buttonGreen a {
   text-decoration: none;
-  color: #eaeaea;
+  color: #fff;
   font-family: "HKGrotesk-SemiBold";
   line-height: 0px;
   font-size: .875rem;
@@ -259,7 +479,7 @@ body {
   letter-spacing: 2px;
 }
 #mobileMenu li a {
-  color: #eaeaea;
+  color: #fff;
 }
 #mobileMenu li a:hover {
   text-decoration: none;
@@ -277,7 +497,7 @@ body {
   margin-bottom: 0px;
 }
 #mainFooter h2, #mainFooter h3, #mainFooter p, #mainFooter a {
-  color: #eaeaea;
+  color: #fff;
 }
 #mainFooter h2 {
   padding-bottom: 15px;
@@ -351,7 +571,7 @@ body {
 #subscribeButt button {
   height: 30px;
   width: 50px;
-  color: #eaeaea;
+  color: #fff;
   text-align: center;
   background: #697769;
   border-radius: 0 25px 25px 0;
@@ -399,7 +619,7 @@ body {
   text-align: center;
 }
 #landingTextCon a, #landingTextCon h2, #landingTextCon h3, #landingTextCon h4, #landingTextCon p {
-  color: #eaeaea;
+  color: #fff;
 }
 
 #landingButton {
@@ -427,7 +647,7 @@ body {
   width: 14px;
   height: 14px;
   margin: 0 5px;
-  border: 2px solid #eaeaea;
+  border: 2px solid #fff;
   border-radius: 50px;
 }
 
@@ -523,7 +743,7 @@ body {
   padding-top: 80px;
 }
 #appCon h2, #appCon h3, #appCon p {
-  color: #eaeaea;
+  color: #fff;
 }
 
 #appInfo h2 {
@@ -572,7 +792,7 @@ body {
 }
 
 #closeForm {
-  color: #eaeaea;
+  color: #fff;
   position: absolute;
   top: 0;
   right: 0;
@@ -617,7 +837,7 @@ body {
   transition: 1s;
 }
 #orderformCon h2, #orderformCon h3 {
-  color: #eaeaea;
+  color: #fff;
 }
 #orderformCon form {
   margin-top: 50px;
@@ -632,7 +852,7 @@ body {
   outline: none;
 }
 #orderformCon button {
-  background-color: #eaeaea;
+  background-color: #fff;
   margin-bottom: 20px;
   width: 90%;
   color: #697769;
@@ -760,7 +980,7 @@ body {
   }
   #headerNav ul li a {
     text-decoration: none;
-    color: #eaeaea;
+    color: #fff;
     font-family: "HKGrotesk-SemiBold";
     line-height: 0px;
     font-size: .875rem;
@@ -1070,7 +1290,7 @@ body {
   }
 
   .buttonWhite:hover {
-    background: #eaeaea;
+    background: #fff;
     transition: 0.3s;
   }
   .buttonWhite:hover a {
