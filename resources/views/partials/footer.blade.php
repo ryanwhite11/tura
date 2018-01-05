@@ -46,6 +46,7 @@
 </footer>
 	
 	<script src="js/main.js"></script>
+	<script src="js/scroll.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/landing.js"></script>
     </body>

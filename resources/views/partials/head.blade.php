@@ -9,6 +9,10 @@
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
 
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.8.4/TweenMax.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.8.4/plugins/ScrollToPlugin.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
         <title>Tura</title>
 
         

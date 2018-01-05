@@ -16,10 +16,10 @@
 		<nav class="d-none d-md-block" id="headerNav">
 			<h3 class="hide">Main Navigation</h3>
 			<ul>
-				<li class="d-none d-lg-inline-block"><a href="/#">HOME</a></li>
-				<li class="d-none d-lg-inline-block"><a href="/#whatCon">ABOUT</a></li>
-				<li class="d-none d-sm-inline-block" id="turaIconCon"><a id="turaIcon" href="#"><img src="img/icon.png" alt="Tura Logo"></a></li>
-				<li class="d-none d-lg-inline-block"><a href="/#turaVideoCon">DEMO</a></li>
+				<li class="d-none d-lg-inline-block"><a href="/#" class="navScroll" id="scmainLanding">HOME</a></li>
+				<li class="d-none d-lg-inline-block"><a href="/#whatCon" class="navScroll" id="scwhatCon">ABOUT</a></li>
+				<li class="d-none d-sm-inline-block" id="turaIconCon"><a id="turaIcon" href="#" class="navScroll"><img src="img/icon.png" alt="Tura Logo"></a></li>
+				<li class="d-none d-lg-inline-block"><a href="/#turaVideoCon" class="navScroll" id="scappCon">DEMO</a></li>
 				<li class="buttonWhite d-lg-inline-block orderLink"><a href="#">ORDER</a></li>
 			</ul>
 		</nav>

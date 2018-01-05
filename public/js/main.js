@@ -21,6 +21,7 @@
 		var sliced = id.slice(4,5);
 		infoText.innerHTML = text[sliced];
 		infoHeader.innerHTML = title[sliced];
+
 		for (var i = 0; i < infoDot.length; i++) {
 			infoDot[i].classList.remove('activeDot');
 		}
@@ -29,9 +30,10 @@
 
 	function openPopup(e){
 		popupBlur.style.display = 'block';
-		popupBlur.style.opacity = '1';
+		TweenMax.to(popupBlur, 0.3, {opacity: 1});
 		popup.style.display = 'block';
 		popup.style.opacity = '1';
+
 	}
 
 	function closePopup(e){

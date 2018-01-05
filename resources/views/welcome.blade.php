@@ -153,7 +153,7 @@
             <h2 class="hide">Order A Tura</h2>
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-12 col-sm-11 col-md-8 col-xl-6 offset-xl-5" id="orderInfo">
+                    <div class="col-12 col-sm-11 col-md-7 col-xl-5 offset-xl-3" id="orderInfo">
                         <h2>Get Your Tura Now</h2>
                         <h3>start growing today</h3>
                         <p>Pre-order your tura today and be one of the first people to start growing your plants with a computer!</p>
