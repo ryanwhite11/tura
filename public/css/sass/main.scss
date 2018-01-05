@@ -59,6 +59,11 @@ body{
 	height: 2000px;
 }
 
+input::placeholder { 
+  color: #fff;
+  letter-spacing: 1px;
+}
+
 .green{
 	color: $green;
 }
@@ -426,6 +431,18 @@ body{
 }
 
 //Features
+#pinkGraph{
+	position: absolute;
+	width: 100%;
+	margin-top: 290px;
+
+	img{
+		width: 50%;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
 #worksCon{
 	padding-top: 60px;
 }
@@ -510,6 +527,7 @@ body{
 }
 
 //Order Tura
+
 #orderCon{
 	margin: 80px 0;
 
@@ -547,7 +565,7 @@ body{
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: rgba(0,0,0,0.8);
+	background: rgba(255,255,255,0.9);
 }
 
 #orderformCon{
@@ -915,6 +933,20 @@ body{
 }
 
 
+@media screen and (min-width: 900px){
+	#pinkGraph{
+	position: absolute;
+	width: 100%;
+	margin-top:300px;
+
+	img{
+		width: 50%;
+		display: block;
+		margin: 0 auto;
+	}
+	}
+}
+
 
 @media screen and (min-width: 992px){
 
@@ -936,7 +968,7 @@ body{
 	}
 
 	#featureCon1 {
-    margin-top: 260px;
+    margin-top: 280px;
 	}
 
 	#featureCon2 {
@@ -1104,6 +1136,18 @@ body{
 		margin-top: 480px;
 	}
 
+	#pinkGraph{
+	position: absolute;
+	width: 100%;
+	margin-top:350px;
+
+	img{
+		width: 35%;
+		display: block;
+		margin: 0 auto;
+	}
+	}
+
 	//APP
 	#appInfo{
 		margin-bottom: 80px;
@@ -1169,4 +1213,24 @@ body{
 			margin-right: auto;
 		}
 	}
+}
+
+
+
+
+@media screen and (min-width: 1400px){
+
+#pinkGraph{
+	position: absolute;
+	width: 100%;
+	margin-top:400px;
+
+	img{
+		width: 35%;
+		display: block;
+		margin: 0 auto;
+	}
+	}
+
+
 }

@@ -97,12 +97,16 @@
                         <p>Know when and how much to water your plants.</p>
                     </div>
 
-                    <div class="col-12" id="pottedPlantCon">
+                    <div class="col-md-12" id="pottedPlantCon">
                         <picture>
                             <source srcset="img/plant-lrg.jpg" media="(min-width:992px)">
                             <source srcset="img/plant-med.jpg" media="(min-width:768px)">
                             <img src="img/plant-small.jpg" alt="Tura Potted Plant">
                         </picture>
+                    </div>
+
+                    <div class="d-none d-md-block col-12" id="pinkGraph">
+                        <img src="img/pink-graph.svg" alt="graph svg" id="pinkGraphSvg">
                     </div>
                     
                 </div>

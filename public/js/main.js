@@ -13,19 +13,22 @@
 		closeButton = document.querySelector('#closeForm'),
 		body = document.querySelector('body');
 
-
 	function switchInfo(e){
 		// console.log(e.currentTarget);
 		// console.log(infoDot);
 		var id = e.currentTarget.id;
 		var sliced = id.slice(4,5);
+		infoText.style.opacity = "0";
+		infoHeader.style.opacity = "0";
 		infoText.innerHTML = text[sliced];
 		infoHeader.innerHTML = title[sliced];
 
 		for (var i = 0; i < infoDot.length; i++) {
 			infoDot[i].classList.remove('activeDot');
 		}
+
 		infoDot[sliced].classList.add('activeDot');
+		TweenMax.to([infoText, infoHeader], 1, {opacity:1});
 	}
 
 	function openPopup(e){
@@ -63,9 +66,6 @@
 		anchor[i].addEventListener('click', prevent, false);
 	}
 
-	
-
-	
 	closeButton.addEventListener('click', closePopup, false);	
 	popupBlur.addEventListener('click', closePopup, false);
 

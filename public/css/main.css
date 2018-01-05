@@ -377,6 +377,11 @@ body {
   height: 2000px;
 }
 
+input::placeholder {
+  color: #fff;
+  letter-spacing: 1px;
+}
+
 .green {
   color: #697769;
 }
@@ -712,6 +717,17 @@ body {
   height: 100%;
 }
 
+#pinkGraph {
+  position: absolute;
+  width: 100%;
+  margin-top: 290px;
+}
+#pinkGraph img {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
 #worksCon {
   padding-top: 60px;
 }
@@ -817,7 +833,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 #orderformCon {
@@ -1150,6 +1166,18 @@ body {
     transition: 0.3s;
   }
 }
+@media screen and (min-width: 900px) {
+  #pinkGraph {
+    position: absolute;
+    width: 100%;
+    margin-top: 300px;
+  }
+  #pinkGraph img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+}
 @media screen and (min-width: 992px) {
   #whatTura {
     padding-right: 150px;
@@ -1169,7 +1197,7 @@ body {
   }
 
   #featureCon1 {
-    margin-top: 260px;
+    margin-top: 280px;
   }
 
   #featureCon2 {
@@ -1330,6 +1358,17 @@ body {
     margin-top: 480px;
   }
 
+  #pinkGraph {
+    position: absolute;
+    width: 100%;
+    margin-top: 350px;
+  }
+  #pinkGraph img {
+    width: 35%;
+    display: block;
+    margin: 0 auto;
+  }
+
   #appInfo {
     margin-bottom: 80px;
   }
@@ -1390,6 +1429,18 @@ body {
   #orderCon .buttonGreen {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media screen and (min-width: 1400px) {
+  #pinkGraph {
+    position: absolute;
+    width: 100%;
+    margin-top: 400px;
+  }
+  #pinkGraph img {
+    width: 35%;
+    display: block;
+    margin: 0 auto;
   }
 }
 
