@@ -103,6 +103,27 @@ input::placeholder {
 		letter-spacing: 0.2em;
 	}
 }
+.buttonDark{
+	text-align: center;
+	border-radius: 25px;
+	background: none;
+	color: $darkGreen;
+	width: 120px;
+	margin: 0 auto;
+	border: 2px solid $darkGreen;
+	padding: 8px 10px;
+	text-transform: uppercase;
+	cursor: pointer;
+
+	a{
+		text-decoration: none;
+		color: $darkGreen;
+		font-family: $hkBold;
+		line-height: 0px;
+		font-size: .875rem;
+		letter-spacing: 0.2em;
+	}
+}
 .buttonGreen{
 	width: 170px;
 	text-align: center;
@@ -298,8 +319,8 @@ input::placeholder {
 }
 
 #mainLanding{
-	background-image: url('../img/bg-mobile.jpg');
-	background-position: center;
+	background-image: url('../img/bg.jpg');
+	background-position: center left;
     background-repeat: no-repeat;
     background-size: cover;
 	height: 100vh;
@@ -325,7 +346,7 @@ input::placeholder {
 #landingTextCon{
 	text-align: center;
 	
-	a,h2,h3,h4,p{
+	h2,h3,h4,p{
 		color: $white;
 	}
 }
@@ -516,8 +537,13 @@ input::placeholder {
 
 //Video Section
 #turaVideoCon{
-	height: 600px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	background: $red;
+
+	#demoLogo{
+		margin-bottom: 50px;
+	}
 
 	.container,.row{
 		height: 100%;
@@ -657,7 +683,6 @@ input::placeholder {
 }
 
 @media screen and (min-width: 600px){
-
 	#infoText{
 	height: 150px;
 	}
@@ -691,7 +716,12 @@ input::placeholder {
 @media screen and (min-width: 768px){
 
 	h3{
-	line-height: 50px;
+		-line-height: 50px;
+	}
+
+	#mainLanding{
+		background-position: bottom center;
+		background-size: cover;
 	}
 
 	.fullscreen-bg {
@@ -723,7 +753,7 @@ input::placeholder {
 
 	#headerNav{
 		width: 100%;
-		.buttonWhite{
+		.buttonDark{
 			margin-left: auto;
 			margin-right: 20px;
 		}
@@ -747,7 +777,7 @@ input::placeholder {
 
 			li a{
 				text-decoration: none;
-				color: $white;
+				color: $darkGreen;
 				font-family: $hkBold;
 				line-height: 0px;
 				font-size: .875rem;
@@ -877,6 +907,13 @@ input::placeholder {
 
 	}
 
+	#turaVideoCon{
+
+		#demoLogo{
+			margin-bottom: 0px;
+		}
+	}
+
 	//PERSONAL CON
 
 	#personalCon{
@@ -980,13 +1017,11 @@ input::placeholder {
 		width: 100%;
 		margin-right: 0px;
 		padding: 0 50px;
-		.buttonWhite{
+		.buttonDark{
 			margin: 0;
 		}
-		.buttonWhite:hover{
-			a{
-				color: $green;
-			}
+		.buttonDark:hover{
+			border: none;
 		}
 		ul{
 			width: 100%;
@@ -1002,9 +1037,11 @@ input::placeholder {
 		li{
 			width: 150px;
 			text-align: center;
-			a:hover{
-				color: $darkGreen;
-
+			.headerLink{
+				transition: 0.3s;
+			}
+			.headerLink:hover{
+				opacity: 0.5;
 			}
 		}
 	}
@@ -1086,6 +1123,25 @@ input::placeholder {
 		}
 	}
 
+	.buttonDark{
+		transition: 0.3s;
+		a{
+			transition: 0.3s;
+		}
+
+	}
+	.buttonDark:hover{
+		background: $white;
+		transition: 0.3s;
+		border: none;
+
+		a{
+			transition: 0.3s;
+		}
+		a:hover{
+			color: $darkGreen;
+		}
+	}
 	.buttonWhite{
 		transition: 0.3s;
 		a{

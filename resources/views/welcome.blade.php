@@ -5,25 +5,26 @@
 
         <section id="mainLanding" class="container-fluid">
         <h2 class="hide">Tura Landing</h2>
-            
-            <div class="fullscreen-bg">
+            <!-- Old Video Bakground -->
+            {{-- <div class="fullscreen-bg">
                 <video loop autoplay poster="img/background.jpg" class="fullscreen-bg_video d-none d-md-block">
                     <source src="videos/bgVideo.mp4" type="video/mp4">
                 </video>
-            </div>
+            </div> --}}
             
 
             <div class="row align-items-center justify-content-center" id="landingArea">
                 <div class="col-10" id="landingTextCon">
-                    <img src="img/logo.png" alt="Tura Logo" id="landingLogo" class="align-self-center">
-                    <div class="buttonWhite d-sm-none orderLink" id="landingButton"><a href="#">ORDER</a></div>
+                    <img src="img/logo-green.png" alt="Tura Logo" id="landingLogo" class="align-self-center">
+                    <div class="buttonDark d-sm-none orderLink" id="landingButton"><a href="#">ORDER</a></div>
                 </div>
-                <div id="landingDotCon">
+                <!-- Old Landing Dots -->
+               {{--  <div id="landingDotCon">
                     <div class="landingDot activeButton" id="ldot0"><a href="#"></a></div>
                     <div class="landingDot" id="ldot1"><a href="#"></a></div>
                     <div class="landingDot" id="ldot2"><a href="#"></a></div>
                     
-                </div>
+                </div> --}}
             </div>
         </section>
 
@@ -141,13 +142,15 @@
             </div>
         </section> 
 
-        <!-- Once we have designed our app, we will put a demo video here -->
         <section id="turaVideoCon">
             <h2 class="hide">Tura Video</h2>
             <div class="container">
                 <div class="row justify-content-center align-items-center">
-                    <div class="col-10 col-md-6 col-lg-4">
-                        <img src="img/logo.png" alt="Logo Video Placeholder">
+                    <div class="col-8 col-md-5 col-lg-3">
+                        <img src="img/logo.png" alt="Logo Video Placeholder" id="demoLogo">
+                    </div>
+                    <div class="col-6 offset-md-1 col-md-4 col-lg-4 col-xl-3">
+                        <img src="img/iphone8-mock.png" alt="App Demo">
                     </div>
                 </div>
             </div>

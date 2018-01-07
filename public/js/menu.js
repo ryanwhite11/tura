@@ -24,7 +24,7 @@
 		
 		if (windowScroll > (height - 60)) {
 			//console.log("CLICKED");
-			header.style.background = 'rgba(105,119,105,1)';
+			header.style.background = 'rgba(234,234,234,1)';
 		}else{
 			header.style.background = 'rgba(0,0,0,0)';
 		}

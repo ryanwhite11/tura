@@ -3,6 +3,7 @@
 
 	//variables
 	var links = document.querySelectorAll(".navScroll");
+	console.log(links);
 	
 	//functions
 	function scrollNav(e) {

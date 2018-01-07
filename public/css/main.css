@@ -422,6 +422,27 @@ input::placeholder {
   letter-spacing: 0.2em;
 }
 
+.buttonDark {
+  text-align: center;
+  border-radius: 25px;
+  background: none;
+  color: #3b3e3b;
+  width: 120px;
+  margin: 0 auto;
+  border: 2px solid #3b3e3b;
+  padding: 8px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.buttonDark a {
+  text-decoration: none;
+  color: #3b3e3b;
+  font-family: "HKGrotesk-SemiBold";
+  line-height: 0px;
+  font-size: .875rem;
+  letter-spacing: 0.2em;
+}
+
 .buttonGreen {
   width: 170px;
   text-align: center;
@@ -601,8 +622,8 @@ input::placeholder {
 }
 
 #mainLanding {
-  background-image: url("../img/bg-mobile.jpg");
-  background-position: center;
+  background-image: url("../img/bg.jpg");
+  background-position: center left;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -623,7 +644,7 @@ input::placeholder {
 #landingTextCon {
   text-align: center;
 }
-#landingTextCon a, #landingTextCon h2, #landingTextCon h3, #landingTextCon h4, #landingTextCon p {
+#landingTextCon h2, #landingTextCon h3, #landingTextCon h4, #landingTextCon p {
   color: #fff;
 }
 
@@ -790,8 +811,12 @@ input::placeholder {
 }
 
 #turaVideoCon {
-  height: 600px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background: #e4d1cb;
+}
+#turaVideoCon #demoLogo {
+  margin-bottom: 50px;
 }
 #turaVideoCon .container, #turaVideoCon .row {
   height: 100%;
@@ -941,7 +966,12 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   h3 {
-    line-height: 50px;
+    -line-height: 50px;
+  }
+
+  #mainLanding {
+    background-position: bottom center;
+    background-size: cover;
   }
 
   .fullscreen-bg {
@@ -972,7 +1002,7 @@ input::placeholder {
   #headerNav {
     width: 100%;
   }
-  #headerNav .buttonWhite {
+  #headerNav .buttonDark {
     margin-left: auto;
     margin-right: 20px;
   }
@@ -996,7 +1026,7 @@ input::placeholder {
   }
   #headerNav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #3b3e3b;
     font-family: "HKGrotesk-SemiBold";
     line-height: 0px;
     font-size: .875rem;
@@ -1118,6 +1148,10 @@ input::placeholder {
     width: 50%;
   }
 
+  #turaVideoCon #demoLogo {
+    margin-bottom: 0px;
+  }
+
   #personalCon {
     text-align: center;
   }
@@ -1209,11 +1243,11 @@ input::placeholder {
     margin-right: 0px;
     padding: 0 50px;
   }
-  #headerNav .buttonWhite {
+  #headerNav .buttonDark {
     margin: 0;
   }
-  #headerNav .buttonWhite:hover a {
-    color: #697769;
+  #headerNav .buttonDark:hover {
+    border: none;
   }
   #headerNav ul {
     width: 100%;
@@ -1232,8 +1266,11 @@ input::placeholder {
     width: 150px;
     text-align: center;
   }
-  #headerNav li a:hover {
-    color: #3b3e3b;
+  #headerNav li .headerLink {
+    transition: 0.3s;
+  }
+  #headerNav li .headerLink:hover {
+    opacity: 0.5;
   }
 
   #turaIconCon {
@@ -1308,6 +1345,25 @@ input::placeholder {
   .buttonGreen:hover a {
     color: #697769;
     transition: 0.3s;
+  }
+
+  .buttonDark {
+    transition: 0.3s;
+  }
+  .buttonDark a {
+    transition: 0.3s;
+  }
+
+  .buttonDark:hover {
+    background: #fff;
+    transition: 0.3s;
+    border: none;
+  }
+  .buttonDark:hover a {
+    transition: 0.3s;
+  }
+  .buttonDark:hover a:hover {
+    color: #3b3e3b;
   }
 
   .buttonWhite {
