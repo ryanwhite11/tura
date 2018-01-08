@@ -19,7 +19,7 @@
 				<li class="d-none d-lg-inline-block"><a href="/#" class="navScroll headerLink" id="scmainLanding">HOME</a></li>
 				<li class="d-none d-lg-inline-block"><a href="/#whatCon" class="navScroll headerLink" id="scwhatCon">ABOUT</a></li>
 				<li class="d-none d-sm-inline-block" id="turaIconCon"><a id="turaIcon" href="#"><img src="img/icon-green.png" alt="Tura Logo"></a></li>
-				<li class="d-none d-lg-inline-block"><a href="/#turaVideoCon" class="navScroll headerLink" id="scturaVideoCon">APP</a></li>
+				<li class="d-none d-lg-inline-block"><a href="/#appCon" class="navScroll headerLink" id="scappCon">APP</a></li>
 				<li class="buttonDark d-lg-inline-block orderLink"><a href="#">ORDER</a></li>
 			</ul>
 		</nav>

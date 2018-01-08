@@ -606,35 +606,53 @@ input::placeholder {
 	z-index: 99;
 	padding: 100px 20px;
 	text-align: center;
-	background-image: url("/img/order-bg-desktop.jpg");
-	background-repeat: no-repeat;
+	/*background-image: url("/img/order-bg-desktop.jpg");*/
+	/*background-repeat: no-repeat;*/
+	background-color: $green;
 	transition: 1s;
 	
 	h2, h3{
 		color: $white;
 	}
+	h3{
+		margin-bottom: 10px;
+	}
 	form{
 		margin-top: 50px;
 	}
 
-	input{
-		width: 90%;
-		background: none;
-		border: solid 2px #fff;
-		margin-bottom: 20px;
-		color: #fff;
-		padding: 5px 10px;
-		outline: none;
+	input {
+	    width: 90%;
+	    background: none;
+	    border: solid 2px #fff;
+	    margin-bottom: 20px;
+	    color: #fff;
+	    padding: 10px 20px;
+	    outline: none;
+	    border-radius: 30px;
 	}
 	
-	button{
-		background-color: $white;
-		margin-bottom: 20px;
-		width: 90%;
-		color: $green;
-		outline: none;
-		padding: 5px 0;
+	button {
+	    background-color: #fff;
+	    margin-bottom: 20px;
+	    width: 90%;
+	    color: #697769;
+	    outline: none;
+	    transition: 0.3s;
+	    padding: 10px 0;
+	    border-radius: 30px;
+	    font-family: "Arial";
+   		 text-transform: uppercase;
+    	line-height: 25px;
+    	font-size: 1rem;
+    	font-weight: 300;
+    	letter-spacing: 0.2em;
 	}
+
+	button:hover {
+	    background-color: rgba(225,225,225, 0.8);
+	}
+
 }
 
 
@@ -648,7 +666,7 @@ input::placeholder {
 @media screen and (min-width: 414px){
 	#orderformCon{
 
-		background-image: url("/img/order-bg-mobile.jpg");
+		/*background-image: url("/img/order-bg-mobile.jpg"); */
 
 	}
 }
@@ -668,7 +686,7 @@ input::placeholder {
 
 	#orderformCon{
 
-		background-image: url("/img/order-bg-desktop.jpg");
+		/*background-image: url("/img/order-bg-desktop.jpg");*/
 
 	}
 
@@ -683,6 +701,10 @@ input::placeholder {
 }
 
 @media screen and (min-width: 600px){
+
+	#orderformCon h3{
+		margin-bottom: 20px;
+	}
 	#infoText{
 	height: 150px;
 	}
@@ -1167,6 +1189,7 @@ input::placeholder {
 	// HOME PAGE
 	#whatTura{
 		text-align: left;
+		margin-left: 0px;
 	}
 	#whatCon{
 		.buttonRed{
@@ -1277,15 +1300,9 @@ input::placeholder {
 @media screen and (min-width: 1400px){
 
 #pinkGraph{
-	position: absolute;
-	width: 100%;
-	margin-top:400px;
+	
+	margin-top:370px;
 
-	img{
-		width: 35%;
-		display: block;
-		margin: 0 auto;
-	}
 	}
 
 
