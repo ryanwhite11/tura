@@ -1221,6 +1221,10 @@ input::placeholder {
   }
 }
 @media screen and (min-width: 900px) {
+  #orderformCon {
+    width: 800px;
+  }
+
   #pinkGraph {
     position: absolute;
     width: 100%;
